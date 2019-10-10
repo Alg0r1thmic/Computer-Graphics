@@ -1,93 +1,74 @@
-
 #ifndef CIRCLE_H
-#define CIRCLE_H
-
-#endif // CIRCLE_H
-/*
- * #ifndef LINE_H
-#define LINE_H
-#include <algorithm>
+#define CIRCLE_H}
 #include<QOpenGLWidget>
 #include<QOpenGLFunctions>
+#include <algorithm>
 
-
-using namespace std;
-void setPixel(float x, float y) {
-    //Desenhando um Ponto
-    glBegin(GL_POINTS);
-        glVertex2i(x , y);
-    glEnd();
-}
-
-//Draw line if X distance is greater than Y
-void bresenhamX(int x0, int y0, int x1, int y1, int dx, int dy)
+class screenPt
 {
-    int i, j, k;
-    i = 2 * dy - dx;
-    j = 2 * dy;
-    k = 2 * (dy - dx);
-    if (!(x0 < x1)) {
-        swap(x0, x1);
-        swap(y0, y1);
+private:
+    GLint x, y;
+public:
+    /* Constructor predeterminado: inicializa las coordenadas a (0, 0). */
+    screenPt ( ) {
+        x = y = 0;
     }
-    setPixel(x0, y0);
-    while (x0 < x1) {
-        if (i < 0)
-            i += j;
+    void setCoords (GLint xCoordValue, GLint yCoordValue) {
+        x = xCoordValue;
+        y = yCoordValue;
+    }
+    GLint getx ( ) const {
+        return x;
+    }
+    GLint gety ( ) const {
+        return y;
+    }
+    void incrementx ( ) {
+        x++;
+    }
+    void decrementy ( ) {
+        y--;
+    }
+};
+inline void setPixel (GLint xCoord, GLint yCoord)
+{
+    glBegin (GL_POINTS);
+        glVertex2i (xCoord, yCoord);
+    glEnd ( );
+}
+inline void circlePlotPoints (GLint xc, GLint yc,screenPt circPt)
+{
+    setPixel (xc + circPt.getx ( ), yc+circPt.gety());
+    setPixel (xc - circPt.getx ( ), yc+circPt.gety());
+    setPixel (xc + circPt.getx ( ), yc-circPt.gety());
+    setPixel (xc - circPt.getx ( ), yc-circPt.gety());
+    setPixel (xc + circPt.gety ( ), yc+circPt.getx());
+    setPixel (xc - circPt.gety ( ), yc+circPt.getx());
+    setPixel (xc + circPt.gety ( ), yc-circPt.getx());
+    setPixel (xc - circPt.gety ( ), yc-circPt.getx());
+}
+inline void circleMidpoint (GLint xc, GLint yc, GLint radius)
+{
+    screenPt circPt;
+
+    GLint p = 1 - radius;
+    // Valor inicial para el parámetro de punto medio.
+    circPt.setCoords (0, radius); // Establecer coordenadas para
+    // punto superior del círculo.
+    void circlePlotPoints (GLint, GLint, screenPt);
+    /* Dibujar el punto inicial en cada cuadrante del círculo. */
+    circlePlotPoints (xc, yc, circPt);
+    /* Calcular el siguiente punto y dibujarlo en cada octante. */
+    while (circPt.getx ( ) < circPt.gety ( )) {
+        circPt.incrementx ( );
+        if (p < 0)
+            p += 2 * circPt.getx ( ) + 1;
         else {
-            if (y0 < y1)
-                ++y0;
-            else
-                --y0;
-            i += k;
+            circPt.decrementy ( );
+            p += 2 * (circPt.getx ( ) - circPt.gety ( )) + 1;
         }
-        ++x0;
-        setPixel(x0, y0);
+        circlePlotPoints (xc, yc, circPt);
     }
 }
 
-//Draw line if X distance is lesser than Y
-void bresenhamY(int x0, int y0, int x1, int y1, int dx, int dy)
-{
-    int i, j, k;
-
-    i = 2 * dx - dy;
-    j = 2 * dx;
-    k = 2 * (dx - dy);
-    if (!(y0 < y1)) {
-        swap(x0, x1);
-        swap(y0, y1);
-    }
-    setPixel(x0, y0);
-    while (y0 < y1) {
-        if (i < 0)
-            i += j;
-        else {
-            if (x0 > x1)
-                --x0;
-            else
-                ++x0;
-            i += k;
-        }
-        ++y0;
-        setPixel(x0, y0);
-    }
-}
-
-//Called by mouse(), will call the appropriate function depending on the length of the X and Y axis
-void bresenham(int x0, int y0, int x1, int y1)
-{
-    int dx = abs(x1 - x0);
-    int dy = abs(y1 - y0);
-
-    if (dx >= dy)
-        bresenhamX(x0, y0, x1, y1, dx, dy);
-    else
-        bresenhamY(x0, y0, x1, y1, dx, dy);
-}
-
-//Calls Bresenham function when the mouse has traced a line
-
-#endif // LINE_H
-
-*/
+#endif // CIRCLE_H
