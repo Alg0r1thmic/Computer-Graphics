@@ -18,6 +18,13 @@ public:
     void paintGL() override;
     void paintLine();
     void resizeGL(int w,int h) override;
+    void drawPoint(float x, float y) {
+        //Desenhando um Ponto
+        glBegin(GL_POINTS);
+            glVertex2i(x , y);
+        glEnd();
+    }
+
 private:
     void qColorToRGB(const QColor &C,float &r,float &g,float &b) const;
     float normalize_0_1(float val,float min,float max)const;
