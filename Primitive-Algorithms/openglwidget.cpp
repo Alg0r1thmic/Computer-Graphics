@@ -21,8 +21,12 @@ void OpenglWidget::paintGL()
     glColor3f(color[colorChosed][0], color[colorChosed][1], color[colorChosed][2]);
     //for (const auto &r: rects) {
     //if(MouseAux%2==0)
-    circleMidpoint(100,100,40);
-    ellipseMidpoint(100,100,20,50);
+    Circle c;
+    c.circleMidpoint(100,100,40);
+    Ellipse e;
+    e.ellipseMidpoint(100,100,20,50);
+    Line l;
+    l.bresenham(30,30,180,56);
     //bresenham(xAtPress,yAtPress, xAtRelease, yAtRelease);
         //bresenhamCircle(r.right(), r.top(), r.right(), 500-r.bottom());
         //bresenhamCircle(r.left(), r.top(), r.left(), 500-r.bottom());

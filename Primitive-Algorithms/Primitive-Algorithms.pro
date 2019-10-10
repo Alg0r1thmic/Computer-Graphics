@@ -25,6 +25,7 @@ HEADERS += \
     Ellipse.h \
     Line.h \
     Polygon.h \
+    Shape.h \
     mainwindow.h \
     openglwidget.h
 
