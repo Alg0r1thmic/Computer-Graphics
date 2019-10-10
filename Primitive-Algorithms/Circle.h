@@ -3,7 +3,6 @@
 #include<QOpenGLWidget>
 #include<QOpenGLFunctions>
 #include <algorithm>
-
 class screenPt
 {
 private:

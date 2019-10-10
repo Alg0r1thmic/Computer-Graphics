@@ -10,6 +10,7 @@
 #include <QMouseEvent>
 #include "Line.h"
 #include "Circle.h"
+#include "Ellipse.h"
 #define RGB_MIN 1
 #define RGB_MAX 255
 

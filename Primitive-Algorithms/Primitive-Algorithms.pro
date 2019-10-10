@@ -22,7 +22,9 @@ SOURCES += \
 
 HEADERS += \
     Circle.h \
+    Ellipse.h \
     Line.h \
+    Polygon.h \
     mainwindow.h \
     openglwidget.h
 
