@@ -16,19 +16,15 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    circle.cpp \
-    line.cpp \
     main.cpp \
     mainwindow.cpp \
-    shape.cpp \
-    shapefactory.cpp
+    openglwidget.cpp
 
 HEADERS += \
-    circle.h \
-    line.h \
+    Circle.h \
+    Line.h \
     mainwindow.h \
-    shape.h \
-    shapefactory.h
+    openglwidget.h
 
 FORMS += \
     mainwindow.ui
@@ -39,5 +35,5 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
-DISTFILES += \
-    model.qmodel
+RESOURCES += \
+    Assets.qrc
