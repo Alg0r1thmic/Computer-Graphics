@@ -21,22 +21,36 @@ void OpenglWidget::paintGL()
     glColor3f(color[colorChosed][0], color[colorChosed][1], color[colorChosed][2]);
     //for (const auto &r: rects) {
     //if(MouseAux%2==0)
-    Circle c;
+    /*Circle c;
     c.circleMidpoint(100,100,40);
     Ellipse e;
     e.ellipseMidpoint(100,100,20,50);
     Line l;
-    l.bresenham(30,30,180,56);
+    l.bresenham(30,30,180,56);*/
+    wcPt2D *points=new wcPt2D[4];
+    points[0].x=10,points[0].y=10;
+    points[1].x=10,points[1].y=20;
+    points[2].x=20,points[2].y=20;
+    points[3].x=20,points[3].y=10;
+
+    std::cout << points[0].x <<std::endl;
+    Polygon p;
+    glBegin (GL_POLYGON);
+        glVertex2f(points[0].x,points[0].y);
+        glVertex2f(points[1].x,points[1].y);
+        glVertex2f(points[2].x,points[2].y);
+        glVertex2f(points[3].x,points[3].y);
+    glEnd ();
+    p.translatePolygon(points,4,50,50);
     //bresenham(xAtPress,yAtPress, xAtRelease, yAtRelease);
         //bresenhamCircle(r.right(), r.top(), r.right(), 500-r.bottom());
         //bresenhamCircle(r.left(), r.top(), r.left(), 500-r.bottom());
         //bresenhamCircle(r.left(), 500-r.bottom(), r.right(), 500-r.bottom());
     //}
 
-    if(MouseAux%2 != 0) {
-        setPixel(MousePoint.x(), MousePoint.y());
-    }
-
+    //if(MouseAux%2 != 0) {
+     //   setPixel(MousePoint.x(), MousePoint.y());
+    //}
     glFlush();
 
 }

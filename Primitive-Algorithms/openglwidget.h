@@ -11,6 +11,7 @@
 #include "Line.h"
 #include "Circle.h"
 #include "Ellipse.h"
+#include "Polygon.h"
 #define RGB_MIN 1
 #define RGB_MAX 255
 class OpenglWidget: public QOpenGLWidget
