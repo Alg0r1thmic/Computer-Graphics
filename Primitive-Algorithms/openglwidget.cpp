@@ -8,47 +8,57 @@ OpenglWidget::OpenglWidget(QWidget *parent)
 
 void OpenglWidget::initializeGL()
 {
-    float r,g,b,a=normalize_0_1(255.0f,RGB_MIN,RGB_MAX);
-    initializeOpenGLFunctions();
-    qColorToRGB(Qt::black,r,g,b);
-    glClearColor(r,g,b,a);
-    glEnable(GL_DEPTH_TEST);
-    glEnable(GL_LIGHT0);
-    glEnable(GL_LIGHTING);
-    glColorMaterial(GL_FRONT_AND_BACK,GL_AMBIENT_AND_DIFFUSE);
-    glEnable(GL_COLOR_MATERIAL);
+    //Seta todos os pixels como preto
+    glClearColor (0.0, 0.0, 0.0, 0.0);
+    //Defini até onde se pode desenhar, os parametros sao os max e min de cada coordenada.
+    glOrtho (0.0, width(), 0.0, height(), -1.0, 1.0);
+    //Faz a projeção de acordo com as coordenadas do OpenGL (é diferente dos pixel da tela do PC)
+    glMatrixMode (GL_PROJECTION);
+
 }
 void OpenglWidget::paintGL()
 {
+    glColor3f(color[colorChosed][0], color[colorChosed][1], color[colorChosed][2]);
+    //for (const auto &r: rects) {
+    if(MouseAux%2==0)
+        bresenham(xAtPress,yAtPress, xAtRelease, yAtRelease);
+        //bresenhamCircle(r.right(), r.top(), r.right(), 500-r.bottom());
+        //bresenhamCircle(r.left(), r.top(), r.left(), 500-r.bottom());
+        //bresenhamCircle(r.left(), 500-r.bottom(), r.right(), 500-r.bottom());
+    //}
 
-    float r,g,b;
-    glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
+    if(MouseAux%2 != 0) {
+        setPixel(MousePoint.x(), MousePoint.y());
+    }
 
-    glBegin(GL_LINES);
-        qColorToRGB(Qt::blue,r,g,b);
-        glColor3f(r,g,b);
-        glVertex3f(0.0f,1.0f,0.0f);
-        glVertex3f(1.0f,0.0f,0.0f);
-    glEnd();
+    glFlush();
+
 }
-
-void OpenglWidget::paintLine()
-{
-    float r,g,b;
-    glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
-    glBegin(GL_LINES);
-        qColorToRGB(Qt::red,r,g,b);
-        glColor3f(r,g,b);
-        glVertex3f(-1.0,0.0f,0.0f);
-        glVertex3f(1.0,0.0f,0.0f);
-    glEnd();
-}
+/*
 void OpenglWidget::resizeGL(int w, int h)
 {
     glViewport(0,0,w,h);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
     glMatrixMode(GL_MODELVIEW);
+}
+*/
+
+void OpenglWidget::mouseReleaseEvent(QMouseEvent *event)
+{
+
+    if(MouseAux%2!=0){
+        xAtPress=event->x();
+        yAtPress=event->y();
+    }
+    else{
+        xAtRelease=event->x();
+        yAtRelease=event->y();
+    }
+    qDebug() <<"press event"<< xAtPress << "-" << yAtPress ;
+
+    ++MouseAux;
+    update();
 }
 
 void OpenglWidget::qColorToRGB(const QColor &C, float &r, float &g, float &b) const

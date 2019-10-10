@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1060</width>
+    <height>888</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -46,13 +46,13 @@
      <string>PushButton</string>
     </property>
    </widget>
-   <widget class="OpenglWidget" name="widget" native="true">
+   <widget class="OpenglWidget" name="openGLWidget">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>30</y>
-      <width>411</width>
-      <height>291</height>
+      <x>0</x>
+      <y>0</y>
+      <width>461</width>
+      <height>381</height>
      </rect>
     </property>
    </widget>
@@ -62,7 +62,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>1060</width>
      <height>16</height>
     </rect>
    </property>
@@ -72,9 +72,8 @@
  <customwidgets>
   <customwidget>
    <class>OpenglWidget</class>
-   <extends>QWidget</extends>
+   <extends>QOpenGLWidget</extends>
    <header location="global">openglwidget.h</header>
-   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources>
