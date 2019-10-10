@@ -9,7 +9,7 @@ class wcPt2D {
 public:
     GLfloat x, y;
 };
-class Polygon
+class Polygon:public Line
 {
 public:
     Polygon() {
@@ -28,7 +28,7 @@ public:
     }
     void rotatePolygon (wcPt2D * verts, GLint nVerts, wcPt2D pivPt,GLdouble theta)
     {
-        wcPt2D * vertsRot;
+        wcPt2D * vertsRot=new wcPt2D[nVerts];
         GLint k;
         for (k = 0; k < nVerts; k++) {
             vertsRot [k].x = pivPt.x + (verts [k].x-pivPt.x)*cos(theta)
@@ -45,7 +45,7 @@ public:
     void scalePolygon (wcPt2D * verts, GLint nVerts, wcPt2D fixedPt,
                        GLfloat sx, GLfloat sy)
     {
-        wcPt2D *vertsNew;
+        wcPt2D *vertsNew=new wcPt2D[nVerts];
         GLint k;
         for (k = 0; k < nVerts; k++) {
             vertsNew[k].x = verts [k].x * sx + fixedPt.x * (1 - sx);
@@ -54,10 +54,9 @@ public:
         glBegin(GL_POLYGON);
             for (k = 0; k < nVerts; k++)
                 glVertex2f (vertsNew[k].x, vertsNew[k].y);
-        glEnd ( );
+        glEnd();
     }
 private:
     //wcPt2D *points;
-
 };
 #endif // POLYGON_H

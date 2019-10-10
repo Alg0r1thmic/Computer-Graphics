@@ -28,10 +28,10 @@ void OpenglWidget::paintGL()
     Line l;
     l.bresenham(30,30,180,56);*/
     wcPt2D *points=new wcPt2D[4];
-    points[0].x=10,points[0].y=10;
-    points[1].x=10,points[1].y=20;
-    points[2].x=20,points[2].y=20;
-    points[3].x=20,points[3].y=10;
+    points[0].x=100,points[0].y=100;
+    points[1].x=100,points[1].y=200;
+    points[2].x=200,points[2].y=200;
+    points[3].x=200,points[3].y=100;
 
     std::cout << points[0].x <<std::endl;
     Polygon p;
@@ -41,7 +41,10 @@ void OpenglWidget::paintGL()
         glVertex2f(points[2].x,points[2].y);
         glVertex2f(points[3].x,points[3].y);
     glEnd ();
-    p.translatePolygon(points,4,50,50);
+    //p.translatePolygon(points,4,50,50);
+    wcPt2D pivot;
+    pivot.x=0,pivot.y=0;
+    p.rotatePolygon(points,4,pivot,50.0);
     //bresenham(xAtPress,yAtPress, xAtRelease, yAtRelease);
         //bresenhamCircle(r.right(), r.top(), r.right(), 500-r.bottom());
         //bresenhamCircle(r.left(), r.top(), r.left(), 500-r.bottom());
