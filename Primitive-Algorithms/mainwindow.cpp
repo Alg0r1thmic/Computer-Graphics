@@ -19,3 +19,24 @@ void MainWindow::on_pushButton_clicked()
 {
     //ui->widget->paintLine();
 }
+
+void MainWindow::on_comboBox_activated(int index)
+{
+    ui->openGLWidget->typeShape=index;
+    ui->openGLWidget->repaint();
+}
+
+void MainWindow::on_spinBox_valueChanged(int arg1)
+{
+
+}
+
+void MainWindow::on_spinBox_2_valueChanged(int arg1)
+{
+
+}
+
+void MainWindow::on_spinBox_3_valueChanged(int arg1)
+{
+
+}

@@ -62,6 +62,7 @@ public:
     }
     //Called by mouse(), will call the appropriate function depending on the length of the X and Y axis
     void bresenham(int x0, int y0, int x1, int y1)
+
     {
         int dx = abs(x1 - x0);
         int dy = abs(y1 - y0);

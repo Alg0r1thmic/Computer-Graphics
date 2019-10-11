@@ -50,8 +50,9 @@
                          <object>{f2bd54ea-c3be-42c3-a70f-bea78bb09c05}</object>
                          <context>Primitive-Algorithms</context>
                          <name>Shape</name>
-                         <pos>x:305;y:10</pos>
+                         <pos>x:310;y:10</pos>
                          <rect>x:-120;y:-55;w:240;h:110</rect>
+                         <auto-sized>false</auto-sized>
                          <visual-role>0</visual-role>
                         </DObject>
                        </base-DObject>
@@ -286,9 +287,77 @@
                       </DAssociation>
                      </instance>
                     </item>
+                    <item>
+                     <instance type="DClass">
+                      <DClass>
+                       <base-DObject>
+                        <DObject>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{633973ad-7fed-4d84-ac93-124a6c06a1a9}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{fc4ad812-59ad-4604-b820-db97c1fb6630}</object>
+                         <context>Primitive-Algorithms</context>
+                         <name>MainWindow</name>
+                         <pos>x:-130;y:425</pos>
+                         <rect>x:-45;y:-30;w:90;h:60</rect>
+                         <visual-role>0</visual-role>
+                        </DObject>
+                       </base-DObject>
+                      </DClass>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DClass">
+                      <DClass>
+                       <base-DObject>
+                        <DObject>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{38c1281a-8b09-474e-8269-3a27e25d8806}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{11e6874f-7920-418c-ba11-10a0fcd033b8}</object>
+                         <context>Primitive-Algorithms</context>
+                         <name>OpenglWidget</name>
+                         <pos>x:-50;y:25</pos>
+                         <rect>x:-180;y:-100;w:360;h:200</rect>
+                         <visual-role>0</visual-role>
+                        </DObject>
+                       </base-DObject>
+                       <show-all-members>true</show-all-members>
+                      </DClass>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DAssociation">
+                      <DAssociation>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{ea109873-4e27-4108-bf2b-a7ec54aef7ac}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{372fa960-07dd-426b-960e-ec041db60f63}</object>
+                         <a>{97663d42-915f-4b28-bdcd-461c9cc4ffbd}</a>
+                         <b>{38c1281a-8b09-474e-8269-3a27e25d8806}</b>
+                        </DRelation>
+                       </base-DRelation>
+                       <a>
+                        <DAssociationEnd>
+                         <cradinality>*</cradinality>
+                         <navigable>true</navigable>
+                         <kind>1</kind>
+                        </DAssociationEnd>
+                       </a>
+                      </DAssociation>
+                     </instance>
+                    </item>
                    </qlist>
                   </elements>
-                  <last-modified>1570743303280</last-modified>
+                  <last-modified>1570743849298</last-modified>
                   <toolbarid>General</toolbarid>
                  </MDiagram>
                 </base-MDiagram>
@@ -331,13 +400,50 @@
                               </MElement>
                              </base-MElement>
                              <name>Shape</name>
+                             <relations>
+                              <handles>
+                               <handles>
+                                <qlist>
+                                 <item>
+                                  <handle>
+                                   <uid>{372fa960-07dd-426b-960e-ec041db60f63}</uid>
+                                   <target>
+                                    <instance type="MAssociation">
+                                     <MAssociation>
+                                      <base-MRelation>
+                                       <MRelation>
+                                        <base-MElement>
+                                         <MElement>
+                                          <uid>{372fa960-07dd-426b-960e-ec041db60f63}</uid>
+                                         </MElement>
+                                        </base-MElement>
+                                        <a>{f2bd54ea-c3be-42c3-a70f-bea78bb09c05}</a>
+                                        <b>{11e6874f-7920-418c-ba11-10a0fcd033b8}</b>
+                                       </MRelation>
+                                      </base-MRelation>
+                                      <a>
+                                       <MAssociationEnd>
+                                        <cardinality>*</cardinality>
+                                        <navigable>true</navigable>
+                                        <kind>1</kind>
+                                       </MAssociationEnd>
+                                      </a>
+                                     </MAssociation>
+                                    </instance>
+                                   </target>
+                                  </handle>
+                                 </item>
+                                </qlist>
+                               </handles>
+                              </handles>
+                             </relations>
                             </MObject>
                            </base-MObject>
                            <members>
                             <qlist>
                              <item>
                               <MClassMember>
-                               <uid>{aa2b3ad7-3f15-49e2-96d8-8418edba9833}</uid>
+                               <uid>{e423f278-9d0c-4168-9560-0f3339f1b8fe}</uid>
                                <visibility>1</visibility>
                                <type>1</type>
                                <declaration>Shape() {}</declaration>
@@ -345,7 +451,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{15db3e36-cc63-4d37-81f2-08d979285ccb}</uid>
+                               <uid>{7a9de437-18d0-4d55-a83e-8148d794a6a0}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void setPixel (GLint xCoord, GLint yCoord)</declaration>
@@ -806,6 +912,131 @@
                                <visibility>1</visibility>
                                <type>1</type>
                                <declaration>GLfloat x, y</declaration>
+                              </MClassMember>
+                             </item>
+                            </qlist>
+                           </members>
+                          </MClass>
+                         </instance>
+                        </target>
+                       </handle>
+                      </item>
+                      <item>
+                       <handle>
+                        <uid>{fc4ad812-59ad-4604-b820-db97c1fb6630}</uid>
+                        <target>
+                         <instance type="MClass">
+                          <MClass>
+                           <base-MObject>
+                            <MObject>
+                             <base-MElement>
+                              <MElement>
+                               <uid>{fc4ad812-59ad-4604-b820-db97c1fb6630}</uid>
+                               <flags>1</flags>
+                              </MElement>
+                             </base-MElement>
+                             <name>MainWindow</name>
+                            </MObject>
+                           </base-MObject>
+                          </MClass>
+                         </instance>
+                        </target>
+                       </handle>
+                      </item>
+                      <item>
+                       <handle>
+                        <uid>{11e6874f-7920-418c-ba11-10a0fcd033b8}</uid>
+                        <target>
+                         <instance type="MClass">
+                          <MClass>
+                           <base-MObject>
+                            <MObject>
+                             <base-MElement>
+                              <MElement>
+                               <uid>{11e6874f-7920-418c-ba11-10a0fcd033b8}</uid>
+                               <flags>1</flags>
+                              </MElement>
+                             </base-MElement>
+                             <name>OpenglWidget</name>
+                            </MObject>
+                           </base-MObject>
+                           <members>
+                            <qlist>
+                             <item>
+                              <MClassMember>
+                               <uid>{a4e55783-4137-49f9-85ef-1ec4330f833e}</uid>
+                               <visibility>1</visibility>
+                               <type>2</type>
+                               <declaration>OpenglWidget(QWidget *parent=nullptr)</declaration>
+                              </MClassMember>
+                             </item>
+                             <item>
+                              <MClassMember>
+                               <uid>{6ffcbf56-0774-45a9-8785-6a7b19b017c6}</uid>
+                               <visibility>1</visibility>
+                               <type>2</type>
+                               <properties>8</properties>
+                               <declaration>void initializeGL()</declaration>
+                              </MClassMember>
+                             </item>
+                             <item>
+                              <MClassMember>
+                               <uid>{4ffe16b1-c41b-4b8e-8198-03a0cf8e8b42}</uid>
+                               <visibility>1</visibility>
+                               <type>2</type>
+                               <properties>8</properties>
+                               <declaration>void paintGL()</declaration>
+                              </MClassMember>
+                             </item>
+                             <item>
+                              <MClassMember>
+                               <uid>{a259e7f5-9530-4f67-8377-f56ea272c6c0}</uid>
+                               <visibility>1</visibility>
+                               <type>2</type>
+                               <properties>8</properties>
+                               <declaration>void mouseReleaseEvent(QMouseEvent *event)</declaration>
+                              </MClassMember>
+                             </item>
+                             <item>
+                              <MClassMember>
+                               <uid>{2c3dd1a1-8e54-4157-b8de-12f0eedb961b}</uid>
+                               <visibility>3</visibility>
+                               <type>2</type>
+                               <properties>4</properties>
+                               <declaration>void qColorToRGB(const QColor &amp;C,float &amp;r,float &amp;g,float &amp;b)</declaration>
+                              </MClassMember>
+                             </item>
+                             <item>
+                              <MClassMember>
+                               <uid>{ef332835-3e50-4153-a234-6616ae1bdb0c}</uid>
+                               <visibility>3</visibility>
+                               <type>2</type>
+                               <properties>4</properties>
+                               <declaration>float normalize_0_1(float val,float min,float max)</declaration>
+                              </MClassMember>
+                             </item>
+                             <item>
+                              <MClassMember>
+                               <uid>{f36cb042-ffed-445c-b7fe-2e6eb28ab32d}</uid>
+                               <visibility>3</visibility>
+                               <type>1</type>
+                               <declaration>int colorChosed</declaration>
+                              </MClassMember>
+                             </item>
+                             <item>
+                              <MClassMember>
+                               <uid>{0744cc10-1483-4386-ab50-96d4c151e6de}</uid>
+                               <visibility>3</visibility>
+                               <type>1</type>
+                               <declaration>float lineSize</declaration>
+                              </MClassMember>
+                             </item>
+                             <item>
+                              <MClassMember>
+                               <uid>{77369886-b7ef-4f3c-96e8-604629cbe3b6}</uid>
+                               <visibility>3</visibility>
+                               <type>1</type>
+                               <declaration>int xAtPress,yAtPress,xAtRelease,yAtRelease</declaration>
                               </MClassMember>
                              </item>
                             </qlist>
