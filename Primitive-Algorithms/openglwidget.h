@@ -41,13 +41,16 @@ public:
         glEnd ( );
     }
     int typeShape;
+    //void mousePressEvent(QMouseEvent *event)override;
+    //void mouseMoveEvent(QMouseEvent *event)override;
 private:
     void qColorToRGB(const QColor &C,float &r,float &g,float &b) const;
     float normalize_0_1(float val,float min,float max)const;
     int colorChosed=0;
     float lineSize=3.0;
-    int xAtPress,yAtPress,xAtRelease,yAtRelease;
-
+    int xAtPress=0,yAtPress=0,xAtRelease=0,yAtRelease=0;
+    QPoint initPos;
+    QPoint finalPos;
 };
 
 #endif // OPENGLWIDGET_H

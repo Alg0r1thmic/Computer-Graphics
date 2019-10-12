@@ -28,15 +28,10 @@ void MainWindow::on_comboBox_activated(int index)
 
 void MainWindow::on_spinBox_valueChanged(int arg1)
 {
-
 }
-
 void MainWindow::on_spinBox_2_valueChanged(int arg1)
 {
-
 }
-
 void MainWindow::on_spinBox_3_valueChanged(int arg1)
 {
-
 }

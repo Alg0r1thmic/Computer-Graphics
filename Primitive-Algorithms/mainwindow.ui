@@ -27,8 +27,8 @@
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>620</x>
-      <y>40</y>
+      <x>600</x>
+      <y>90</y>
       <width>55</width>
       <height>16</height>
      </rect>
@@ -40,8 +40,8 @@
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>521</x>
-      <y>41</y>
+      <x>530</x>
+      <y>40</y>
       <width>60</width>
       <height>38</height>
      </rect>
@@ -96,39 +96,63 @@
    <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
-      <x>590</x>
-      <y>70</y>
-      <width>141</width>
-      <height>91</height>
+      <x>528</x>
+      <y>114</y>
+      <width>201</width>
+      <height>61</height>
      </rect>
     </property>
-    <layout class="QGridLayout" name="gridLayout">
-     <item row="0" column="0" colspan="3">
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
       <widget class="QLabel" name="label_3">
        <property name="text">
         <string>Translate</string>
        </property>
       </widget>
      </item>
-     <item row="0" column="3" colspan="2">
-      <widget class="QLabel" name="label_7">
-       <property name="text">
-        <string>x:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="5" colspan="3">
-      <widget class="QSpinBox" name="spinBox_4"/>
-     </item>
-     <item row="0" column="8">
-      <widget class="QLabel" name="label_8">
-       <property name="text">
-        <string>y:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="9">
-      <widget class="QSpinBox" name="spinBox"/>
+     <item row="0" column="1" rowspan="2" colspan="2">
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>x:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QSpinBox" name="spinBox_4"/>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>y:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QSpinBox" name="spinBox"/>
+       </item>
+       <item row="1" column="0" rowspan="2">
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>x:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1" rowspan="2">
+        <widget class="QSpinBox" name="spinBox_5"/>
+       </item>
+       <item row="1" column="2" rowspan="2" colspan="2">
+        <widget class="QLabel" name="label_11">
+         <property name="text">
+          <string>y:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QSpinBox" name="spinBox_3"/>
+       </item>
+      </layout>
      </item>
      <item row="1" column="0">
       <widget class="QLabel" name="label_5">
@@ -137,41 +161,21 @@
        </property>
       </widget>
      </item>
-     <item row="1" column="1" colspan="3">
-      <widget class="QLabel" name="label_10">
-       <property name="text">
-        <string>x:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="4" colspan="3">
-      <widget class="QSpinBox" name="spinBox_5"/>
-     </item>
-     <item row="1" column="7" colspan="2">
-      <widget class="QLabel" name="label_11">
-       <property name="text">
-        <string>y:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="9">
-      <widget class="QSpinBox" name="spinBox_3"/>
-     </item>
-     <item row="2" column="0" colspan="2">
+     <item row="2" column="0">
       <widget class="QLabel" name="label_4">
        <property name="text">
         <string>Rotate:</string>
        </property>
       </widget>
      </item>
-     <item row="2" column="2" colspan="4">
+     <item row="2" column="1">
       <widget class="QLabel" name="label_9">
        <property name="text">
         <string>theta</string>
        </property>
       </widget>
      </item>
-     <item row="2" column="6" colspan="3">
+     <item row="2" column="2">
       <widget class="QSpinBox" name="spinBox_2"/>
      </item>
     </layout>

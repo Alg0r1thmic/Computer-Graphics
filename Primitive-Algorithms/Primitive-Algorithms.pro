@@ -31,15 +31,13 @@ HEADERS += \
 
 FORMS += \
     mainwindow.ui
-LIBS += -lglut -lGLU -lGL
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
-RESOURCES += \
-    Assets.qrc
+RESOURCES +=
 
 DISTFILES += \
     engine.qmodel
