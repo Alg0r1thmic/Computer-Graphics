@@ -4,12 +4,15 @@
 #include<QOpenGLFunctions>
 #include <algorithm>
 #include "Shape.h"
+#include "iostream"
+#include <vector>
+using namespace std;
 class Line:public Shape
 {
 public:
     Line() {}
     //Draw line if X distance is greater than Y
-    void bresenhamX(int x0, int y0, int x1, int y1, int dx, int dy)
+    void lineBresenhamX(int x0, int y0, int x1, int y1, int dx, int dy)
     {
         int i, j, k;
         i = 2 * dy - dx;
@@ -35,7 +38,7 @@ public:
         }
     }
     //Draw line if X distance is lesser than Y
-    void bresenhamY(int x0, int y0, int x1, int y1, int dx, int dy)
+    void lineBresenhamY(int x0, int y0, int x1, int y1, int dx, int dy)
     {
         int i, j, k;
         i = 2 * dx - dy;
@@ -61,16 +64,102 @@ public:
         }
     }
     //Called by mouse(), will call the appropriate function depending on the length of the X and Y axis
-    void bresenham(int x0, int y0, int x1, int y1)
-
+    void lineBresenham(int x0, int y0, int x1, int y1)
     {
         int dx = abs(x1 - x0);
         int dy = abs(y1 - y0);
 
         if (dx >= dy)
-            this->bresenhamX(x0, y0, x1, y1, dx, dy);
+            this->lineBresenhamX(x0, y0, x1, y1, dx, dy);
         else
-            this->bresenhamY(x0, y0, x1, y1, dx, dy);
+            this->lineBresenhamY(x0, y0, x1, y1, dx, dy);
+    }
+    void lineBresenham3D(int x1,int y1,int z1,int x2,int y2,int z2){
+        vector<int> points;
+        points.push_back(x1);
+        points.push_back(y1);
+        points.push_back(z1);
+        int xs,ys,zs,p1,p2;
+        int dx = abs(x2 - x1);
+        int dy = abs(y2 - y1);
+        int dz = abs(z2 - z1);
+        if (x2 > x1)
+            xs = 1;
+        else
+            xs = -1;
+        if (y2 > y1)
+            ys = 1;
+        else
+            ys = -1;
+        if (z2 > z1)
+            zs = 1;
+        else
+            zs = -1;
+
+        // Driving axis is X-axis"
+        if (dx >= dy and dx >= dz){
+            p1 = 2 * dy - dx ;
+            p2 = 2 * dz - dx ;
+            while (x1 != x2){
+                x1 += xs;
+                if (p1 >= 0){
+                    y1 += ys ;
+                    p1 -= 2 * dx ;
+                }
+                if (p2 >= 0){
+                    z1 += zs;
+                    p2 -= 2 * dx;
+                }
+                p1 += 2 * dy ;
+                p2 += 2 * dz ;
+                points.push_back(x1);
+                points.push_back(y1);
+                points.push_back(z1);
+            }
+        }
+        // Driving axis is Y-axis"
+        else if (dy >= dx and dy >= dz){
+            p1 = 2 * dx - dy;
+            p2 = 2 * dz - dy;
+            while (y1 != y2){
+                y1 += ys;
+                if (p1 >= 0){
+                    x1 += xs;
+                    p1 -= 2 * dy;
+                }
+                if (p2 >= 0){
+                    z1 += zs;
+                    p2 -= 2 * dy;
+                }
+                p1 += 2 * dx;
+                p2 += 2 * dz;
+                points.push_back(x1);
+                points.push_back(y1);
+                points.push_back(z1);
+            }
+        }
+        //Driving axis is Z-axis"
+        else {
+            p1 = 2 * dy - dz;
+            p2 = 2 * dx - dz;
+            while (z1 != z2){
+                z1 += zs;
+                if (p1 >= 0){
+                    y1 += ys;
+                    p1 -= 2 * dz;
+                }
+                if (p2 >= 0){
+                    x1 += xs;
+                    p2 -= 2 * dz;
+                }
+                p1 += 2 * dy;
+                p2 += 2 * dx;
+                points.push_back(x1);
+                points.push_back(y1);
+                points.push_back(z1);
+            }
+        }
+        return points;
     }
 };
 

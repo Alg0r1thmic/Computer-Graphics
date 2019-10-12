@@ -24,7 +24,7 @@ void OpenglWidget::paintGL()
     if(typeShape==0){
         Line l;
         if(MouseAux%2==0)
-            l.bresenham(xAtPress,yAtPress,xAtRelease,yAtRelease);
+            l.lineBresenham(xAtPress,yAtPress,xAtRelease,yAtRelease);
 
     }
     else if(typeShape==1){
