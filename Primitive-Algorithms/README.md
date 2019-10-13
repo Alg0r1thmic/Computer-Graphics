@@ -1,6 +1,6 @@
 # Este trabajado fue desarrollado usando OpenGl y Qtcreator
 ## Modelo Uml
-![alt text]()
+![alt text](https://github.com/Alg0r1thmic/Computer-Graphics/blob/master/Primitive-Algorithms/Images/model1.png)
 
 ## Generacion de linea
 Para generar se usa el algoritmo de bresenham en el libro Gráficos por computadora
@@ -116,10 +116,10 @@ pero como una linea solo esta en dos dimensiones z=0
 ```
 ![alt text](https://github.com/Alg0r1thmic/Computer-Graphics/blob/master/Primitive-Algorithms/Images/polygon.png)
 ### Escalar poligono
-![alt text](https://github.com/Alg0r1thmic/Computer-Graphics/blob/master/Primitive-Algorithms/Images/scale/scalePolygon.gif)
+![alt text](https://github.com/Alg0r1thmic/Computer-Graphics/blob/master/Primitive-Algorithms/Images/scale/polygonScale.gif)
 
 ### Rotar poligono
-![alt text](https://github.com/Alg0r1thmic/Computer-Graphics/blob/master/Primitive-Algorithms/Images/rotate/rotatePolygon.png)
+![alt text](https://github.com/Alg0r1thmic/Computer-Graphics/blob/master/Primitive-Algorithms/Images/rotate/polygonRotate.gif)
 
 ### Trasladar poligono
-![alt text](https://github.com/Alg0r1thmic/Computer-Graphics/blob/master/Primitive-Algorithms/Images/translate/translatePolygon.gif)
+![alt text](https://github.com/Alg0r1thmic/Computer-Graphics/blob/master/Primitive-Algorithms/Images/translate/polygonTranslate.gif)
