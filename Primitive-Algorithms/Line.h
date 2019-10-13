@@ -93,7 +93,6 @@ public:
         else
             zs = -1;
 
-        // Driving axis is X-axis"
         if (dx >= dy and dx >= dz){
             p1 = 2 * dy - dx ;
             p2 = 2 * dz - dx ;
@@ -112,7 +111,6 @@ public:
                 setPixel3D(x1,y1,z1);
             }
         }
-        // Driving axis is Y-axis"
         else if (dy >= dx and dy >= dz){
             p1 = 2 * dx - dy;
             p2 = 2 * dz - dy;
@@ -132,7 +130,6 @@ public:
             }
 
         }
-        //Driving axis is Z-axis"
         else {
             p1 = 2 * dy - dz;
             p2 = 2 * dx - dz;
