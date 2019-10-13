@@ -18,32 +18,30 @@ con OpenGL solo es para los casos en que la pendiente sea <1,por eso para genera
 ![alt text](https://github.com/Alg0r1thmic/Computer-Graphics/blob/master/Primitive-Algorithms/Images/line/line.gif)
 ## Generacion de linea3D
 En este caso tambien se esta usando tambien el algoritmo de bresenham
-$y = x^2 \hbox{ when $x > 2$}$
 ```
-Ingrese los dos puntos finales y almacene el punto inicial como $(x_ {0}, y_ {0}, z_ {0})$
+Ingrese los dos puntos finales y almacene el punto inicial como (x_ {0}, y_ {0}, z_ {0})
 Calcule las constantes dx, dy, dzy determine el eje impulsor comparando
 los valores absolutos de dx, dy, dz
-Si abs ( dx) es máximo, entonces el eje X es el eje impulsor
-Si abs ( dy) es máximo, entonces el eje Y es el eje impulsor
-Si abs ( dz) es máximo, entonces el eje Z es el eje motor
+        Si abs ( dx) es máximo, entonces el eje X es el eje impulsor
+        Si abs ( dy) es máximo, entonces el eje Y es el eje impulsor
+        Si abs ( dz) es máximo, entonces el eje Z es el eje motor
 Supongamos que el eje X es el eje conductor, entonces
  py_ {0} = 2dy - dx \\ pz_ {0} = 2dz - dx 
 En cada uno a lo x_ {k}largo de la línea, comenzando en k = 0, verifique las siguientes condiciones
 y determine el siguiente punto:
 Si py_ {k} <0Y pz_ {k} <0, entonces
-trazar (x_ {k} +1, y_ {k}, z_ {k})y
-establecerpy_ {k + 1} = py_ {k} + 2dy, pz_ {k + 1} = pz_ {k} + 2dz
+        trazar (x_ {k} +1, y_ {k}, z_ {k})y
+        establecer py_ {k + 1} = py_ {k} + 2dy, pz_ {k + 1} = pz_ {k} + 2dz
 De lo contrario, si py_ {k}> 0Y pz_ {k} <0, entonces
-trazar (x_ {k} +1, y_ {k} +1, z_ {k})y
-establecerpy_ {k + 1} = py_ {k} + 2dy-2dx, pz_ {k + 1} = pz_ {k} + 2dz
-Si no py_ {k} 0,
-trazar (x_ {k} +1, y_ {k}, z_ {k} +1)y
-establecerpy_ {k + 1} = py_ {k} + 2dy, pz_ {k + 1} = pz_ {k} + 2dz-2dx
+        trazar (x_ {k} +1, y_ {k} +1, z_ {k})y
+        establecer py_ {k + 1} = py_ {k} + 2dy-2dx, pz_ {k + 1} = pz_ {k} + 2dz
+Si no py_ {k}0,
+        trazar (x_ {k} +1, y_ {k}, z_ {k} +1)y
+        establecer py_ {k + 1} = py_ {k} + 2dy, pz_ {k + 1} = pz_ {k} + 2dz-2dx
 De lo contrario,
-trazar (x_ {k} +1, y_ {k} +1, z_ {k} +1)y
-establecer py_ {k + 1} = py_ {k} + 2dy-2dx, pz_ {k + 1} = pz_ {k} + 2dz-2dx>
+        trazar (x_ {k} +1, y_ {k} +1, z_ {k} +1)y
+        establecer py_ {k + 1} = py_ {k} + 2dy-2dx, pz_ {k + 1} = pz_ {k} + 2dz-2dx>
 Repita el paso 5 dx-1veces
-
 ```
 pero como una linea solo esta en dos dimensiones z=0
 ![alt text](https://github.com/Alg0r1thmic/Computer-Graphics/blob/master/Primitive-Algorithms/Images/line3d/line3d.gif)
