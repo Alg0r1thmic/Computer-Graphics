@@ -18,7 +18,7 @@ con OpenGL solo es para los casos en que la pendiente sea <1,por eso para genera
 ![alt text](https://github.com/Alg0r1thmic/Computer-Graphics/blob/master/Primitive-Algorithms/Images/line/line.gif)
 ## Generacion de linea3D
 En este caso tambien se esta usando tambien el algoritmo de bresenham
-
+$y = x^2 \hbox{ when $x > 2$}$
 ```
 Ingrese los dos puntos finales y almacene el punto inicial como $(x_ {0}, y_ {0}, z_ {0})$
 Calcule las constantes dx, dy, dzy determine el eje impulsor comparando
