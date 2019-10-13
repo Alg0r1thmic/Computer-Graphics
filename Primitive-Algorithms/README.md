@@ -20,85 +20,33 @@ con OpenGL solo es para los casos en que la pendiente sea <1,por eso para genera
 En este caso tambien se esta usando tambien el algoritmo de bresenham
 
 ```
-void lineBresenham3D(int x1,int y1,int z1,int x2,int y2,int z2){
-        setPixel3D(x1,y1,z1);
-        int xs,ys,zs,p1,p2;
-        int dx = abs(x2 - x1);
-        int dy = abs(y2 - y1);
-        int dz = abs(z2 - z1);
-        if (x2 > x1)
-            xs = 1;
-        else
-            xs = -1;
-        if (y2 > y1)
-            ys = 1;
-        else
-            ys = -1;
-        if (z2 > z1)
-            zs = 1;
-        else
-            zs = -1;
-
-        if (dx >= dy and dx >= dz){
-            p1 = 2 * dy - dx ;
-            p2 = 2 * dz - dx ;
-            while (x1 != x2){
-                x1 += xs;
-                if (p1 >= 0){
-                    y1 += ys ;
-                    p1 -= 2 * dx ;
-                }
-                if (p2 >= 0){
-                    z1 += zs;
-                    p2 -= 2 * dx;
-                }
-                p1 += 2 * dy ;
-                p2 += 2 * dz ;
-                setPixel3D(x1,y1,z1);
-            }
-        }
-        else if (dy >= dx and dy >= dz){
-            p1 = 2 * dx - dy;
-            p2 = 2 * dz - dy;
-            while (y1 != y2){
-                y1 += ys;
-                if (p1 >= 0){
-                    x1 += xs;
-                    p1 -= 2 * dy;
-                }
-                if (p2 >= 0){
-                    z1 += zs;
-                    p2 -= 2 * dy;
-                }
-                p1 += 2 * dx;
-                p2 += 2 * dz;
-                setPixel3D(x1,y1,z1);
-            }
-
-        }
-        else {
-            p1 = 2 * dy - dz;
-            p2 = 2 * dx - dz;
-            while (z1 != z2){
-                z1 += zs;
-                if (p1 >= 0){
-                    y1 += ys;
-                    p1 -= 2 * dz;
-                }
-                if (p2 >= 0){
-                    x1 += xs;
-                    p2 -= 2 * dz;
-                }
-                p1 += 2 * dy;
-                p2 += 2 * dx;
-                setPixel3D(x1,y1,z1);
-            }
-        }
-    }
+Ingrese los dos puntos finales y almacene el punto inicial como (x_ {0}, y_ {0}, z_ {0})
+Calcule las constantes dx, dy, dzy determine el eje impulsor comparando
+los valores absolutos de dx, dy, dz
+Si abs ( dx) es máximo, entonces el eje X es el eje impulsor
+Si abs ( dy) es máximo, entonces el eje Y es el eje impulsor
+Si abs ( dz) es máximo, entonces el eje Z es el eje motor
+Supongamos que el eje X es el eje conductor, entonces
+ py_ {0} = 2dy - dx \\ pz_ {0} = 2dz - dx 
+En cada uno a lo x_ {k}largo de la línea, comenzando en k = 0, verifique las siguientes condiciones
+y determine el siguiente punto:
+Si py_ {k} <0Y pz_ {k} <0, entonces
+trazar (x_ {k} +1, y_ {k}, z_ {k})y
+establecerpy_ {k + 1} = py_ {k} + 2dy, pz_ {k + 1} = pz_ {k} + 2dz
+De lo contrario, si py_ {k}> 0Y pz_ {k} <0, entonces
+trazar (x_ {k} +1, y_ {k} +1, z_ {k})y
+establecerpy_ {k + 1} = py_ {k} + 2dy-2dx, pz_ {k + 1} = pz_ {k} + 2dz
+Si no py_ {k} 0,
+trazar (x_ {k} +1, y_ {k}, z_ {k} +1)y
+establecerpy_ {k + 1} = py_ {k} + 2dy, pz_ {k + 1} = pz_ {k} + 2dz-2dx
+De lo contrario,
+trazar (x_ {k} +1, y_ {k} +1, z_ {k} +1)y
+establecer py_ {k + 1} = py_ {k} + 2dy-2dx, pz_ {k + 1} = pz_ {k} + 2dz-2dx>
+Repita el paso 5 dx-1veces
 
 ```
 pero como una linea solo esta en dos dimensiones z=0
-![alt text](https://github.com/Alg0r1thmic/Computer-Graphics/blob/master/Primitive-Algorithms/Images/line3d/line.gif)
+![alt text](https://github.com/Alg0r1thmic/Computer-Graphics/blob/master/Primitive-Algorithms/Images/line3d/line3d.gif)
 
 ## Generacion de Circulo
 ![alt text](https://github.com/Alg0r1thmic/Computer-Graphics/blob/master/Primitive-Algorithms/Images/circle/circle.gif)
