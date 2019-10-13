@@ -20,7 +20,7 @@ con OpenGL solo es para los casos en que la pendiente sea <1,por eso para genera
 En este caso tambien se esta usando tambien el algoritmo de bresenham
 
 ```
-Ingrese los dos puntos finales y almacene el punto inicial como (x_ {0}, y_ {0}, z_ {0})
+Ingrese los dos puntos finales y almacene el punto inicial como $(x_ {0}, y_ {0}, z_ {0})$
 Calcule las constantes dx, dy, dzy determine el eje impulsor comparando
 los valores absolutos de dx, dy, dz
 Si abs ( dx) es máximo, entonces el eje X es el eje impulsor
