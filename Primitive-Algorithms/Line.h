@@ -75,10 +75,7 @@ public:
             this->lineBresenhamY(x0, y0, x1, y1, dx, dy);
     }
     void lineBresenham3D(int x1,int y1,int z1,int x2,int y2,int z2){
-        vector<int> points;
-        points.push_back(x1);
-        points.push_back(y1);
-        points.push_back(z1);
+        setPixel3D(x1,y1,z1);
         int xs,ys,zs,p1,p2;
         int dx = abs(x2 - x1);
         int dy = abs(y2 - y1);
@@ -112,9 +109,7 @@ public:
                 }
                 p1 += 2 * dy ;
                 p2 += 2 * dz ;
-                points.push_back(x1);
-                points.push_back(y1);
-                points.push_back(z1);
+                setPixel3D(x1,y1,z1);
             }
         }
         // Driving axis is Y-axis"
@@ -133,10 +128,9 @@ public:
                 }
                 p1 += 2 * dx;
                 p2 += 2 * dz;
-                points.push_back(x1);
-                points.push_back(y1);
-                points.push_back(z1);
+                setPixel3D(x1,y1,z1);
             }
+
         }
         //Driving axis is Z-axis"
         else {
@@ -154,12 +148,9 @@ public:
                 }
                 p1 += 2 * dy;
                 p2 += 2 * dx;
-                points.push_back(x1);
-                points.push_back(y1);
-                points.push_back(z1);
+                setPixel3D(x1,y1,z1);
             }
         }
-        return points;
     }
 };
 

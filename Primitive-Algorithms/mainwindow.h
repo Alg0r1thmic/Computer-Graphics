@@ -20,11 +20,17 @@ private slots:
 
     void on_comboBox_activated(int index);
 
-    void on_spinBox_valueChanged(int arg1);
+    void on_comboBox_2_activated(int index);
 
-    void on_spinBox_2_valueChanged(int arg1);
+    void on_angle_valueChanged(int arg1);
 
-    void on_spinBox_3_valueChanged(int arg1);
+    void on_tx_valueChanged(int arg1);
+
+    void on_ty_valueChanged(int arg1);
+
+    void on_sx_valueChanged(int arg1);
+
+    void on_sy_valueChanged(int arg1);
 
 private:
     Ui::MainWindow *ui;

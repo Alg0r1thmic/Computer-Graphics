@@ -19,104 +19,97 @@ void OpenglWidget::initializeGL()
 void OpenglWidget::paintGL()
 {
     glColor3f(color[colorChosed][0], color[colorChosed][1], color[colorChosed][2]);
-    //for (const auto &r: rects) {
-    //if(MouseAux%2==0)
-    if(typeShape==0){
-        Line l;
-        if(MouseAux%2==0)
+    switch (typeShape) {
+    case 0:{
+        if(MouseAux%2 != 0) {
+            setPixel(finalPos.x(),500-finalPos.y());
+        }else{
+            Line l;
             l.lineBresenham(xAtPress,yAtPress,xAtRelease,yAtRelease);
-
-    }
-    else if(typeShape==1){
-        Circle c;
-        c.circleMidpoint(200,200,100);
-
-    }
-    else if(typeShape==2){
-        Ellipse e;
-        e.ellipseMidpoint(200,200,30,60);
-
-    }
-    else if (typeShape==3) {
+            //resetValues();
+        }
+    }break;
+    case 1:{
+        if(MouseAux%2 != 0) {
+            setPixel(finalPos.x(),500-finalPos.y());
+        }else{
+        Line l;
+        l.lineBresenham3D(xAtPress,yAtPress,0,xAtRelease,yAtRelease,0);}
+    }break;
+    case 2:{
+        if(MouseAux%2 != 0) {
+            setPixel(finalPos.x(),500-finalPos.y());
+        }else{
+            Circle c;
+            c.circleMidpoint(xAtRelease,yAtRelease,abs(xAtRelease-xAtPress));
+            //resetValues();
+        }
+    }break;
+    case 3:{
+        if(MouseAux%2 != 0) {
+            setPixel(finalPos.x(),500-finalPos.y());
+        }else{
+            Ellipse e;
+            e.ellipseMidpoint(xAtRelease,yAtRelease,abs(xAtPress-xAtRelease),abs(yAtPress-yAtRelease));
+            //resetValues();
+        }
+    }break;
+    case 4: {
         wcPt2D *points=new wcPt2D[4];
-            points[0].x=50,points[0].y=190;
-            points[1].x=50,points[1].y=290;
-            points[2].x=270,points[2].y=290;
-            points[3].x=270,points[3].y=190;
+        points[0].x=50,points[0].y=190;
+        points[1].x=50,points[1].y=290;
+        points[2].x=270,points[2].y=290;
+        points[3].x=270,points[3].y=190;
 
-            Polygon p;
-            glBegin (GL_POLYGON);
-                glVertex2f(points[0].x,points[0].y);
-                glVertex2f(points[1].x,points[1].y);
-                glVertex2f(points[2].x,points[2].y);
-                glVertex2f(points[3].x,points[3].y);
-            glEnd ();
+        Polygon p;
+        glBegin (GL_POLYGON);
+            glVertex2f(points[0].x,points[0].y);
+            glVertex2f(points[1].x,points[1].y);
+            glVertex2f(points[2].x,points[2].y);
+            glVertex2f(points[3].x,points[3].y);
+        glEnd ();
+        p.translatePolygon(points,4,tx,ty);
+        wcPt2D pivot;
+        pivot.x=0,pivot.y=0;
+        p.rotatePolygon(points,4,pivot,angle);
+        qDebug() <<"angle--->" << angle;
+        wcPt2D fixed;
+        fixed.x=100,fixed.y=150;
+        //p.rotatePolygon(points,4,pivot,50.0);
+        p.scalePolygon(points,4,fixed,sx,sy);
+        glFlush();
+    }break;
+    default:{}break;
     }
-    //p.translatePolygon(points,4,50,50);
-    //wcPt2D pivot;
-    //pivot.x=0,pivot.y=0;
-    //p.rotatePolygon(points,4,pivot,50.0);
-    //p.scalePolygon(points,4,pivot,20,30);
-    //bresenham(xAtPress,yAtPress, xAtRelease, yAtRelease);
-        //bresenhamCircle(r.right(), r.top(), r.right(), 500-r.bottom());
-        //bresenhamCircle(r.left(), r.top(), r.left(), 500-r.bottom());
-        //bresenhamCircle(r.left(), 500-r.bottom(), r.right(), 500-r.bottom());
-    //}
-    /*
-    if(MouseAux%2 != 0) {
-        setPixel(finalPos.x(),finalPos.y());
-    }*/
     glFlush();
-
 }
-/*
-void OpenglWidget::resizeGL(int w, int h)
-{
-    glViewport(0,0,w,h);
-    glMatrixMode(GL_PROJECTION);
-    glLoadIdentity();
-    glMatrixMode(GL_MODELVIEW);
-}
-*/
-
 void OpenglWidget::mouseReleaseEvent(QMouseEvent *event)
 {
 
     finalPos=event->pos();
     if(MouseAux%2!=0){
         xAtPress=event->x();
-        yAtPress=event->y()+100;
+        yAtPress=500-event->y();
+        qDebug() <<"AtPress"<< xAtPress << "-" << yAtPress ;
+
     }
     else{
         xAtRelease=event->x();
-        yAtRelease=event->y()-100;
-    }
-    qDebug() <<"press event"<< xAtPress << "-" << yAtPress ;
+        yAtRelease=500-event->y();
+        qDebug() <<"relseaPress"<< xAtRelease << "-" << yAtRelease ;
 
+    }
     ++MouseAux;
     update();
 }
-/*void OpenglWidget::mousePressEvent(QMouseEvent *event)
+
+void OpenglWidget::resetValues()
 {
-    if(MouseAux%2==0)
-        initPos=event->pos();
-    else
-        finalPos=event->pos();
-    ++MouseAux;
-    update();
-}*/
-/*
-void OpenglWidget::mouseMoveEvent(QMouseEvent *event)
-{
-    xAtPress=event->x();
-    yAtPress=event->y();
-
-    lastPos=event->pos();
-    qDebug() <<"mouse move"<< xAtPress << "-" << yAtPress ;
-
-}*/
-
-
+    this->xAtPress=0;
+    this->yAtPress=0;
+    this->xAtRelease=0;
+    this->yAtRelease=0;
+}
 void OpenglWidget::qColorToRGB(const QColor &C, float &r, float &g, float &b) const
 {
     int red=C.red();

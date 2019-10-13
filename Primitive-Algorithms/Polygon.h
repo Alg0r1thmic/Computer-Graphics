@@ -5,6 +5,7 @@
 #include<QOpenGLWidget>
 #include<QOpenGLFunctions>
 #include <algorithm>
+#include <QDebug>
 class wcPt2D {
 public:
     GLfloat x, y;
@@ -31,15 +32,17 @@ public:
         wcPt2D * vertsRot=new wcPt2D[nVerts];
         GLint k;
         for (k = 0; k < nVerts; k++) {
-            vertsRot [k].x = pivPt.x + (verts [k].x-pivPt.x)*cos(theta)
-                                    - (verts [k].y-pivPt.y)*sin(theta);
-            vertsRot [k].y = pivPt.y + (verts [k].x-pivPt.x)*sin(theta)
+            vertsRot [k].x = pivPt.x + (verts[k].x-pivPt.x)*cos(theta)
+                                    - (verts[k].y-pivPt.y)*sin(theta);
+            vertsRot [k].y = pivPt.y + (verts[k].x-pivPt.x)*sin(theta)
                                     + (verts [k].y-pivPt.y)*cos(theta);
         }
 
         glBegin(GL_POLYGON);
-            for (k = 0; k < nVerts; k++)
-            glVertex2f (vertsRot [k].x, vertsRot[k].y);
+            for (k = 0; k < nVerts; k++){
+                glVertex2f(abs(vertsRot [k].x),abs(vertsRot[k].y));
+                qDebug() << vertsRot [k].x <<"<->"<< vertsRot[k].y ;
+            }
         glEnd();
     }
     void scalePolygon (wcPt2D * verts, GLint nVerts, wcPt2D fixedPt,
