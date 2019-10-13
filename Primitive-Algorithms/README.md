@@ -1,6 +1,6 @@
 # Este trabajado fue desarrollado usando OpenGl y Qtcreator
 ## Modelo Uml
-![alt text](https://github.com/Alg0r1thmic/Computer-Graphics/blob/master/Primitive-Algorithms/Images/model.png)
+![](https://github.com/Alg0r1thmic/Computer-Graphics/blob/master/Primitive-Algorithms/Images/line/line.gif)
 
 ## Generacion de linea
 ![alt text](https://github.com/Alg0r1thmic/Computer-Graphics/blob/master/Primitive-Algorithms/Images/line.png)
