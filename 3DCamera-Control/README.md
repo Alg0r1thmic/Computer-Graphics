@@ -16,7 +16,7 @@ forward (), right () y up ().
 ```
  Toman los vectores del sistema de coordenadas del objeto actual y los giran usando  QQuaternion
 ### la clase Window 
-Esta clase usara clases como Camara3D,Tranform3d,input,vertex
+Esta clase usara clases como Camara3D,Tranform3d,input,vertex para crear una ventana de visualizacion
 
 # Para la renderizacion 
 
