@@ -159,26 +159,32 @@ void Window::update()
     if (Input::keyPressed(Qt::Key_W))
     {
       translation += m_camera.forward();
+      qDebug() << "Prees W";
     }
     if (Input::keyPressed(Qt::Key_S))
     {
       translation -= m_camera.forward();
+    qDebug() << "Prees S";
     }
     if (Input::keyPressed(Qt::Key_A))
     {
       translation -= m_camera.right();
+    qDebug() << "Prees A";
     }
     if (Input::keyPressed(Qt::Key_D))
     {
       translation += m_camera.right();
+    qDebug() << "Prees D";
     }
     if (Input::keyPressed(Qt::Key_Q))
     {
       translation -= m_camera.up();
+    qDebug() << "Prees Q";
     }
     if (Input::keyPressed(Qt::Key_E))
     {
       translation += m_camera.up();
+        qDebug() << "Prees E";
     }
     m_camera.translate(transSpeed * translation);
   }
@@ -224,9 +230,6 @@ void Window::mouseReleaseEvent(QMouseEvent *event)
   Input::registerMouseRelease(event->button());
 }
 
-/*******************************************************************************
- * Private Helpers
- ******************************************************************************/
 
 void Window::printVersionInformation()
 {
