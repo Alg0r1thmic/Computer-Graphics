@@ -1,7 +1,7 @@
 # Quadtree 
 Este proyecto fue desarrollado con Python3 
-Primero se obtiene un matriz de que representa cada piel con sus respectivos valores 
-A continuación se usará la clase Quadtree que guarda nodos y exclusivamente se van creando nodos siempre y cuando el promedio de color sea menor a un umbral 
+Primero se obtiene un matriz de que representa cada piel con sus respectivos valores rgb 
+A continuación se usará la clase Quadtree que guarda nodos y revursivamente  se van creando nodos siempre y cuando el promedio de color sea menor a un umbral 
 
 ## Imagen original de una caricatura
 ![alt text](https://github.com/Alg0r1thmic/Computer-Graphics/blob/master/QuadTree/caricatura.png)
