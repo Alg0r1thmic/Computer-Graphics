@@ -12,6 +12,11 @@ public:
             glVertex2i (xCoord, yCoord);
         glEnd ( );
     }
+    void setPixelf(GLfloat x,GLfloat y){
+        glBegin(GL_POINTS);
+            glVertex2f(x,y);
+        glEnd();
+    }
     void setPixel3D(GLint x,GLint y,GLint z)
     {
         glBegin(GL_POINTS);

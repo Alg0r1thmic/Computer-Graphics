@@ -73,7 +73,7 @@
                          <object>{cf1b6581-b439-461f-b933-60c111651836}</object>
                          <context>3DCamera-Control</context>
                          <name>Input</name>
-                         <pos>x:450;y:695</pos>
+                         <pos>x:1025;y:650</pos>
                          <rect>x:-255;y:-165;w:510;h:330</rect>
                          <visual-role>0</visual-role>
                         </DObject>
@@ -95,7 +95,7 @@
                          <object>{8affb8b4-bac0-498d-ae58-889d6b082667}</object>
                          <context>3DCamera-Control</context>
                          <name>Transform3D</name>
-                         <pos>x:980;y:260</pos>
+                         <pos>x:560;y:250</pos>
                          <rect>x:-150;y:-230;w:300;h:460</rect>
                          <visual-role>0</visual-role>
                         </DObject>
@@ -117,7 +117,7 @@
                          <object>{237274ac-fa81-417b-9f53-0c1b23290783}</object>
                          <context>3DCamera-Control</context>
                          <name>Vertex</name>
-                         <pos>x:590;y:180</pos>
+                         <pos>x:970;y:310</pos>
                          <rect>x:-165;y:-130;w:330;h:260</rect>
                          <visual-role>0</visual-role>
                         </DObject>
@@ -139,7 +139,7 @@
                          <object>{df713bc6-e718-4fdf-b77b-ffebaf85d6b8}</object>
                          <context>3DCamera-Control</context>
                          <name>Window</name>
-                         <pos>x:1325;y:450</pos>
+                         <pos>x:180;y:660</pos>
                          <rect>x:-135;y:-170;w:270;h:340</rect>
                          <visual-role>0</visual-role>
                         </DObject>
@@ -148,10 +148,175 @@
                       </DClass>
                      </instance>
                     </item>
+                    <item>
+                     <instance type="DAssociation">
+                      <DAssociation>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{e43ccff1-0da2-4dc6-bdb4-9a91285ab2dd}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{44adfb04-327d-4651-b340-aa2a74671672}</object>
+                         <a>{b0e71328-1753-43c1-a9ce-3234fd5cee08}</a>
+                         <b>{51cbaac3-69fa-4647-acb4-6c70a591ae13}</b>
+                        </DRelation>
+                       </base-DRelation>
+                       <a>
+                        <DAssociationEnd>
+                         <cradinality>*</cradinality>
+                         <navigable>true</navigable>
+                         <kind>1</kind>
+                        </DAssociationEnd>
+                       </a>
+                      </DAssociation>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DAssociation">
+                      <DAssociation>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{a72cadde-15dd-4989-b19a-fd6e669e64aa}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{c6ef89aa-cec0-4527-9805-be0a3e547ac7}</object>
+                         <a>{ae30ebf6-8fce-4b13-98da-d61e0f9af67e}</a>
+                         <b>{51cbaac3-69fa-4647-acb4-6c70a591ae13}</b>
+                        </DRelation>
+                       </base-DRelation>
+                       <a>
+                        <DAssociationEnd>
+                         <cradinality>*</cradinality>
+                         <navigable>true</navigable>
+                         <kind>1</kind>
+                        </DAssociationEnd>
+                       </a>
+                      </DAssociation>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DAssociation">
+                      <DAssociation>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{cc4ea61c-06b3-45ab-8115-1e3a835a57cd}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{d6904a41-1270-441f-b83d-ed187d23df80}</object>
+                         <a>{ae30ebf6-8fce-4b13-98da-d61e0f9af67e}</a>
+                         <b>{b0e71328-1753-43c1-a9ce-3234fd5cee08}</b>
+                        </DRelation>
+                       </base-DRelation>
+                       <a>
+                        <DAssociationEnd>
+                         <cradinality>*</cradinality>
+                         <navigable>true</navigable>
+                         <kind>1</kind>
+                        </DAssociationEnd>
+                       </a>
+                      </DAssociation>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DAssociation">
+                      <DAssociation>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{46421380-9062-4889-b96b-0681f73df022}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{3bcfd339-06fa-4e72-b319-731d4bc129e9}</object>
+                         <a>{ae30ebf6-8fce-4b13-98da-d61e0f9af67e}</a>
+                         <b>{38e5a8a1-380e-4e65-a8dd-ec68cc9841b5}</b>
+                        </DRelation>
+                       </base-DRelation>
+                       <a>
+                        <DAssociationEnd>
+                         <cradinality>*</cradinality>
+                         <navigable>true</navigable>
+                         <kind>1</kind>
+                        </DAssociationEnd>
+                       </a>
+                      </DAssociation>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DAssociation">
+                      <DAssociation>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{52812828-3058-476e-8b53-f359217db101}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{6f12f358-662f-49c8-b6c8-18d912a154a1}</object>
+                         <a>{ae30ebf6-8fce-4b13-98da-d61e0f9af67e}</a>
+                         <b>{06fc93a9-4039-47cb-9a06-b5e6d258e8ef}</b>
+                        </DRelation>
+                       </base-DRelation>
+                       <a>
+                        <DAssociationEnd>
+                         <cradinality>*</cradinality>
+                         <navigable>true</navigable>
+                         <kind>1</kind>
+                        </DAssociationEnd>
+                       </a>
+                      </DAssociation>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DComponent">
+                      <DComponent>
+                       <base-DObject>
+                        <DObject>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{ca40bac4-82d3-434e-ac6c-7a02de409c28}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{ff20d182-f933-4c8c-bae7-2ee1e6f7af40}</object>
+                         <context>Shaders</context>
+                         <name>Simple</name>
+                         <pos>x:540;y:715</pos>
+                         <rect>x:-95;y:-45;w:190;h:90</rect>
+                         <auto-sized>false</auto-sized>
+                         <visual-role>0</visual-role>
+                        </DObject>
+                       </base-DObject>
+                      </DComponent>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DDependency">
+                      <DDependency>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{372e609e-54df-4a0f-9d7d-39378911ea09}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{5e321532-2bc0-409f-9606-0bfb61e80d8c}</object>
+                         <a>{ca40bac4-82d3-434e-ac6c-7a02de409c28}</a>
+                         <b>{ae30ebf6-8fce-4b13-98da-d61e0f9af67e}</b>
+                        </DRelation>
+                       </base-DRelation>
+                      </DDependency>
+                     </instance>
+                    </item>
                    </qlist>
                   </elements>
-                  <last-modified>1574017686065</last-modified>
-                  <toolbarid>General</toolbarid>
+                  <last-modified>1574018213725</last-modified>
+                  <toolbarid>Components</toolbarid>
                  </MDiagram>
                 </base-MDiagram>
                </MCanvasDiagram>
@@ -193,13 +358,79 @@
                               </MElement>
                              </base-MElement>
                              <name>Camera3D</name>
+                             <relations>
+                              <handles>
+                               <handles>
+                                <qlist>
+                                 <item>
+                                  <handle>
+                                   <uid>{b6d750fd-925c-488d-a80d-6f5b566b7ccc}</uid>
+                                   <target>
+                                    <instance type="MAssociation">
+                                     <MAssociation>
+                                      <base-MRelation>
+                                       <MRelation>
+                                        <base-MElement>
+                                         <MElement>
+                                          <uid>{b6d750fd-925c-488d-a80d-6f5b566b7ccc}</uid>
+                                         </MElement>
+                                        </base-MElement>
+                                        <a>{e5c76ad7-0453-4fa8-8269-112e2cd26bd6}</a>
+                                        <b>{df713bc6-e718-4fdf-b77b-ffebaf85d6b8}</b>
+                                       </MRelation>
+                                      </base-MRelation>
+                                      <a>
+                                       <MAssociationEnd>
+                                        <cardinality>*</cardinality>
+                                        <navigable>true</navigable>
+                                        <kind>1</kind>
+                                       </MAssociationEnd>
+                                      </a>
+                                     </MAssociation>
+                                    </instance>
+                                   </target>
+                                  </handle>
+                                 </item>
+                                 <item>
+                                  <handle>
+                                   <uid>{44adfb04-327d-4651-b340-aa2a74671672}</uid>
+                                   <target>
+                                    <instance type="MAssociation">
+                                     <MAssociation>
+                                      <base-MRelation>
+                                       <MRelation>
+                                        <base-MElement>
+                                         <MElement>
+                                          <uid>{44adfb04-327d-4651-b340-aa2a74671672}</uid>
+                                         </MElement>
+                                        </base-MElement>
+                                        <a>{e5c76ad7-0453-4fa8-8269-112e2cd26bd6}</a>
+                                        <b>{8affb8b4-bac0-498d-ae58-889d6b082667}</b>
+                                       </MRelation>
+                                      </base-MRelation>
+                                      <a>
+                                       <MAssociationEnd>
+                                        <cardinality>*</cardinality>
+                                        <navigable>true</navigable>
+                                        <kind>1</kind>
+                                       </MAssociationEnd>
+                                      </a>
+                                     </MAssociation>
+                                    </instance>
+                                   </target>
+                                  </handle>
+                                 </item>
+                                </qlist>
+                               </handles>
+                              </handles>
+                             </relations>
                             </MObject>
                            </base-MObject>
                            <members>
                             <qlist>
                              <item>
                               <MClassMember>
-                               <uid>{9946e8b0-74bb-4ed2-8820-8e74c95b280f}</uid>
+                               <uid>{f1aff011-53d1-482f-bff3-394acf5371e5}</uid>
                                <visibility>1</visibility>
                                <type>1</type>
                                <properties>64</properties>
@@ -208,7 +439,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{53d67b01-f8a8-4a4e-9ff6-74bf446803f2}</uid>
+                               <uid>{4e4bc5f6-4a0d-455a-af0c-72e0fa9b380e}</uid>
                                <visibility>1</visibility>
                                <type>1</type>
                                <properties>64</properties>
@@ -217,7 +448,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{7c8fae5a-d48b-48fa-8e57-3b6025c18c52}</uid>
+                               <uid>{fe17cf77-b397-4578-9b5a-3a44df172de2}</uid>
                                <visibility>1</visibility>
                                <type>1</type>
                                <properties>64</properties>
@@ -226,7 +457,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{44f743e4-0a71-42ab-8be6-fe209fba2fc1}</uid>
+                               <uid>{1581da57-12ad-41ea-bd79-ac8c07719284}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>Camera3D()</declaration>
@@ -234,7 +465,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{07874f04-098c-4c78-8906-f7d9e38f3114}</uid>
+                               <uid>{a63a0ba0-1029-4af4-8ff5-23ae1338fc19}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void translate(const QVector3D &amp;dt)</declaration>
@@ -242,7 +473,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{1bf23d8c-2680-4fde-8b73-e8ee067adbd7}</uid>
+                               <uid>{d65efc4a-6d6f-4f3e-afee-e89f9e6f2be9}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void translate(float dx, float dy, float dz)</declaration>
@@ -250,7 +481,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{b7621484-9022-44e9-949a-90bc65d3c212}</uid>
+                               <uid>{29cb0d30-105e-44c7-b614-4948ac72767e}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void rotate(const QQuaternion &amp;dr)</declaration>
@@ -258,7 +489,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{7e16f4e8-a7ba-4959-b8d5-29e8ba2b228a}</uid>
+                               <uid>{58768b41-9ec7-468b-a1d6-b5da338f6f25}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void rotate(float angle, const QVector3D &amp;axis)</declaration>
@@ -266,7 +497,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{910dcc79-f23f-480e-a9b8-08e50f86d256}</uid>
+                               <uid>{7b6426b5-5991-40a1-a85f-467db316c6ba}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void rotate(float angle, float ax, float ay, float az)</declaration>
@@ -274,7 +505,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{b413ace2-8174-459b-abc4-07374cfa1601}</uid>
+                               <uid>{94902ad0-c07e-465e-8987-c9e379b6124c}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void setTranslation(const QVector3D &amp;t)</declaration>
@@ -282,7 +513,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{108053a9-8968-42e6-b5fb-9ceb3d8163b4}</uid>
+                               <uid>{3649dabe-7d01-49ab-87a8-905023fef7be}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void setTranslation(float x, float y, float z)</declaration>
@@ -290,7 +521,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{7128e196-a36c-4da9-a215-4660d54d9197}</uid>
+                               <uid>{9fcaacf1-68b0-41de-8365-4a55e9f34b39}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void setRotation(const QQuaternion &amp;r)</declaration>
@@ -298,7 +529,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{e22644aa-8721-4011-9874-a903f95a7aa7}</uid>
+                               <uid>{88c95e4d-3d4b-45aa-8dbd-19992d3ed392}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void setRotation(float angle, const QVector3D &amp;axis)</declaration>
@@ -306,7 +537,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{a5e94f7b-6b49-43c0-803b-c77233ea47bb}</uid>
+                               <uid>{16667648-7954-44af-8176-09b729d0be2d}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void setRotation(float angle, float ax, float ay, float az)</declaration>
@@ -314,7 +545,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{63005d12-5377-4807-8dfb-7025ddb1e624}</uid>
+                               <uid>{cd5a759c-8cb5-4de5-9207-077bb3774d93}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <properties>4</properties>
@@ -323,7 +554,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{899a5b65-79d3-486e-bdb2-758401a86ff6}</uid>
+                               <uid>{7a22c57a-a1cf-4d6f-ab12-b772771c18b6}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <properties>4</properties>
@@ -332,7 +563,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{b34ba93e-7fc7-4c21-bc6d-f7e434d2b48e}</uid>
+                               <uid>{c42af620-d72a-4cae-92ee-03ced8345f04}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>const QMatrix4x4&amp; toMatrix()</declaration>
@@ -340,7 +571,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{cf80c35a-aa56-49cc-8852-bd52cad8a828}</uid>
+                               <uid>{97f7f4ae-8676-4b6e-8063-69bcee60c324}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <properties>4</properties>
@@ -349,7 +580,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{3ce08e66-034b-4cfd-94e5-d6fcb557dfb7}</uid>
+                               <uid>{875969c3-ad26-44c3-a6b4-b72252066f41}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <properties>4</properties>
@@ -358,7 +589,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{f77c0faa-0714-4a74-abc6-7fe280c6bae1}</uid>
+                               <uid>{0bfc485b-0068-4b22-9fc6-ac1fbad2717f}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <properties>4</properties>
@@ -367,7 +598,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{9726dac5-43ed-4ea3-94b1-b380617cd292}</uid>
+                               <uid>{843a3052-f56b-48ca-97ee-44285ecb6a02}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>bool m_dirty</declaration>
@@ -375,7 +606,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{d8d56bbd-d53d-43eb-89c3-3fbb8f77da46}</uid>
+                               <uid>{c274fcab-427e-4de5-8e54-fb9ac58fb895}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>QVector3D m_translation</declaration>
@@ -383,7 +614,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{615cde01-d79d-4b68-8752-18527b958fec}</uid>
+                               <uid>{cba5e835-20c2-4a02-997b-55a2b6a18f34}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>QQuaternion m_rotation</declaration>
@@ -391,7 +622,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{ba2a7978-320e-4704-9767-7e807d541a9d}</uid>
+                               <uid>{341fd384-9936-4651-942a-26fc4ec05f43}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>QMatrix4x4 m_world</declaration>
@@ -447,7 +678,7 @@
                             <qlist>
                              <item>
                               <MClassMember>
-                               <uid>{08e8dc97-dcb0-4b87-84db-e34142f09373}</uid>
+                               <uid>{71678127-19d5-4ff0-bd30-308e136e49a2}</uid>
                                <visibility>1</visibility>
                                <type>1</type>
                                <declaration>enum InputState</declaration>
@@ -455,7 +686,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{677fd675-5d90-48f4-a2f2-a0ac8632e2e1}</uid>
+                               <uid>{90ae0233-4a1b-4e19-8b8a-2800ae367504}</uid>
                                <visibility>1</visibility>
                                <type>1</type>
                                <declaration>{         InputInvalid,         InputRegistered,         InputUnregistered,         InputTriggered,         InputPressed,         InputReleased     }</declaration>
@@ -463,7 +694,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{0b7a0d59-3d8f-4435-8012-047f2b8c2b9f}</uid>
+                               <uid>{7f00f649-191d-4798-b68c-d7597a6530ac}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <properties>64</properties>
@@ -472,7 +703,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{1f3fce52-04df-4e76-b73d-f818c9de258e}</uid>
+                               <uid>{66015bf7-a78a-426c-bf4e-ec8392d3966f}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <properties>64</properties>
@@ -481,7 +712,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{8641dd16-82b5-43ef-8b19-993f7e240fc3}</uid>
+                               <uid>{fca4c24d-a0a3-45a9-9b0c-6f0a028b0cf5}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <properties>64</properties>
@@ -490,7 +721,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{253b740c-424c-42b2-8a41-15831976e74b}</uid>
+                               <uid>{d0ad6f06-c848-4d95-a49f-fe9cdca9bc58}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <properties>64</properties>
@@ -499,7 +730,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{c4b20acc-9e0d-4764-b186-d66ccffc755e}</uid>
+                               <uid>{7b0138d1-e833-44c6-a391-b929bf976bd5}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <properties>64</properties>
@@ -508,7 +739,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{82dae6d9-0508-4d7e-af7b-dd7399df1cf7}</uid>
+                               <uid>{bfc05425-d48c-4b7f-a0b4-eccfe42ec1f6}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <properties>64</properties>
@@ -517,7 +748,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{d773bab6-5160-409c-88c3-e63841031e4b}</uid>
+                               <uid>{1ce59335-bb71-45b1-9057-85b464b738b7}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <properties>64</properties>
@@ -526,7 +757,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{bf5e3b87-875d-402f-81ba-e6426f5b5f79}</uid>
+                               <uid>{f1a9d2ed-7527-4e75-aa71-1ba0e75dd6ac}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <properties>64</properties>
@@ -535,7 +766,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{7a8d7782-2677-4c0e-bd6a-dcd92aca894e}</uid>
+                               <uid>{77d4ce7f-bc7a-4eba-b1de-fd3ff02f72ec}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <properties>64</properties>
@@ -544,7 +775,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{42252af8-6457-4d49-9176-9de3e2f69f25}</uid>
+                               <uid>{06f54182-51ac-484f-a2a6-b27e0d6cfcf7}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <properties>64</properties>
@@ -553,7 +784,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{769b4b4d-e7ae-4242-9c7c-2540b41a5483}</uid>
+                               <uid>{b5fc04a8-0ad7-4958-935e-6e139c5d0af1}</uid>
                                <visibility>3</visibility>
                                <type>2</type>
                                <properties>64</properties>
@@ -562,7 +793,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{cb6054dc-053f-42eb-ae2a-c648472b6162}</uid>
+                               <uid>{6573d17e-c5a1-4343-9241-a6b1b78f25de}</uid>
                                <visibility>3</visibility>
                                <type>2</type>
                                <properties>64</properties>
@@ -571,7 +802,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{9f87a554-06c3-474a-9c27-89d54eb85604}</uid>
+                               <uid>{3be8ae5b-897f-48e3-a534-0a0c1a7ad139}</uid>
                                <visibility>3</visibility>
                                <type>2</type>
                                <properties>64</properties>
@@ -580,7 +811,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{3df6167d-3004-4b1b-a522-66eb826995de}</uid>
+                               <uid>{2d80b793-9f32-42ac-bd68-b7c9667e3c26}</uid>
                                <visibility>3</visibility>
                                <type>2</type>
                                <properties>64</properties>
@@ -589,7 +820,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{55bb5027-23c9-4d7e-93a9-261ea6b3109c}</uid>
+                               <uid>{5ac0b13e-dbb4-4479-b623-ab08179d3889}</uid>
                                <visibility>3</visibility>
                                <type>2</type>
                                <properties>64</properties>
@@ -598,7 +829,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{4a1e0ab2-2bb1-4753-ab9c-1d6707cb5341}</uid>
+                               <uid>{a53fa49c-b11b-4e2d-af6f-0fb9db5aee5e}</uid>
                                <visibility>3</visibility>
                                <type>2</type>
                                <properties>64</properties>
@@ -607,7 +838,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{e4a59d6e-17b7-449c-b05f-263a5ab0b03a}</uid>
+                               <uid>{b7d2b944-dfea-42cd-97bd-c3534cac5f84}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>friend class Window</declaration>
@@ -635,13 +866,79 @@
                               </MElement>
                              </base-MElement>
                              <name>Transform3D</name>
+                             <relations>
+                              <handles>
+                               <handles>
+                                <qlist>
+                                 <item>
+                                  <handle>
+                                   <uid>{8bb45739-c201-4bf5-a97a-ff8d01f9f62f}</uid>
+                                   <target>
+                                    <instance type="MAssociation">
+                                     <MAssociation>
+                                      <base-MRelation>
+                                       <MRelation>
+                                        <base-MElement>
+                                         <MElement>
+                                          <uid>{8bb45739-c201-4bf5-a97a-ff8d01f9f62f}</uid>
+                                         </MElement>
+                                        </base-MElement>
+                                        <a>{8affb8b4-bac0-498d-ae58-889d6b082667}</a>
+                                        <b>{e5c76ad7-0453-4fa8-8269-112e2cd26bd6}</b>
+                                       </MRelation>
+                                      </base-MRelation>
+                                      <a>
+                                       <MAssociationEnd>
+                                        <cardinality>*</cardinality>
+                                        <navigable>true</navigable>
+                                        <kind>1</kind>
+                                       </MAssociationEnd>
+                                      </a>
+                                     </MAssociation>
+                                    </instance>
+                                   </target>
+                                  </handle>
+                                 </item>
+                                 <item>
+                                  <handle>
+                                   <uid>{b2973860-93b5-4df3-a30d-a7004e4816da}</uid>
+                                   <target>
+                                    <instance type="MAssociation">
+                                     <MAssociation>
+                                      <base-MRelation>
+                                       <MRelation>
+                                        <base-MElement>
+                                         <MElement>
+                                          <uid>{b2973860-93b5-4df3-a30d-a7004e4816da}</uid>
+                                         </MElement>
+                                        </base-MElement>
+                                        <a>{8affb8b4-bac0-498d-ae58-889d6b082667}</a>
+                                        <b>{df713bc6-e718-4fdf-b77b-ffebaf85d6b8}</b>
+                                       </MRelation>
+                                      </base-MRelation>
+                                      <a>
+                                       <MAssociationEnd>
+                                        <cardinality>*</cardinality>
+                                        <navigable>true</navigable>
+                                        <kind>1</kind>
+                                       </MAssociationEnd>
+                                      </a>
+                                     </MAssociation>
+                                    </instance>
+                                   </target>
+                                  </handle>
+                                 </item>
+                                </qlist>
+                               </handles>
+                              </handles>
+                             </relations>
                             </MObject>
                            </base-MObject>
                            <members>
                             <qlist>
                              <item>
                               <MClassMember>
-                               <uid>{ad390285-df43-402a-a1f3-1dba08a14b88}</uid>
+                               <uid>{49c0e567-b8bd-40d0-a27e-6ebe39f11c96}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>Transform3D()</declaration>
@@ -649,7 +946,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{19bfa902-4690-4a08-ab9c-ec793745502b}</uid>
+                               <uid>{1d8d2643-3501-4222-bc43-aff90817d41e}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void translate(const QVector3D &amp;dt)</declaration>
@@ -657,7 +954,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{0e2d8ed0-5e3a-46de-a2cc-247108e39e90}</uid>
+                               <uid>{5f47fa04-9aae-4c1d-b73d-0e23a3ebb6d4}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void translate(float dx, float dy, float dz)</declaration>
@@ -665,7 +962,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{c50c5cd9-d9ee-4fb2-b109-e1ca0d6475ad}</uid>
+                               <uid>{1b2b680a-6ac7-4ae7-a30e-7ca225e7af26}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void scale(const QVector3D &amp;ds)</declaration>
@@ -673,7 +970,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{a12360de-fb29-4187-99bb-f0e634865a73}</uid>
+                               <uid>{c547f49c-943b-4cb6-87de-5d7ea18b0aa5}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void scale(float dx, float dy, float dz)</declaration>
@@ -681,7 +978,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{e5d97266-37c3-4af1-92a9-4bd56a508a51}</uid>
+                               <uid>{4a824a11-6a69-435c-aee5-fbd5b3c81afd}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void scale(float factor)</declaration>
@@ -689,7 +986,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{98246556-5e6a-4891-9c1f-d3c99c7eea93}</uid>
+                               <uid>{0825d3c0-ce3b-4047-8acc-e4539dcab146}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void rotate(const QQuaternion &amp;dr)</declaration>
@@ -697,7 +994,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{ac3e5e2d-a34c-4cee-a557-7b987287dffb}</uid>
+                               <uid>{18f1d6dc-a3c8-45f3-85b0-99b764a1685b}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void rotate(float angle, const QVector3D &amp;axis)</declaration>
@@ -705,7 +1002,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{99ba7fa6-4abc-434a-8e31-4ec46936010a}</uid>
+                               <uid>{a700e112-ac67-41e4-8a47-58ebac3d4e53}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void rotate(float angle, float ax, float ay, float az)</declaration>
@@ -713,7 +1010,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{ab0a7a47-cb07-4875-8158-7ace53bce5a4}</uid>
+                               <uid>{13ac721f-7dd4-44ab-b8b1-c69168f7d5f7}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void grow(const QVector3D &amp;ds)</declaration>
@@ -721,7 +1018,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{124731ed-c576-48a3-9f7f-79bebdb960e8}</uid>
+                               <uid>{c473727d-38db-49e1-b433-634eb1d1676f}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void grow(float dx, float dy, float dz)</declaration>
@@ -729,7 +1026,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{803b1f2a-65e1-45e8-b7aa-2e565064b5ad}</uid>
+                               <uid>{b201c72e-f582-4b83-854e-8d0eb10c9963}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void grow(float factor)</declaration>
@@ -737,7 +1034,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{c5e82acc-221f-4089-83ec-9806471170cb}</uid>
+                               <uid>{d2050d68-0269-44e2-8f7b-496c4d21249f}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void setTranslation(const QVector3D &amp;t)</declaration>
@@ -745,7 +1042,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{4a3f5aaa-49d4-4239-a677-664bda5a5f4d}</uid>
+                               <uid>{76e44106-524f-430a-bf3c-1779e2fbaa20}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void setTranslation(float x, float y, float z)</declaration>
@@ -753,7 +1050,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{51cf6a50-803b-4e9b-85cd-cf001e68659a}</uid>
+                               <uid>{793a093d-185f-444f-9a90-30c95fcc40c5}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void setScale(const QVector3D &amp;s)</declaration>
@@ -761,7 +1058,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{3bba2000-ef89-449e-b0aa-4c102aeb5846}</uid>
+                               <uid>{4007df2b-6cec-49fd-8cb1-dcdcc3832ead}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void setScale(float x, float y, float z)</declaration>
@@ -769,7 +1066,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{2f26ff5a-6c2b-42d0-b432-b59b5670e4af}</uid>
+                               <uid>{2196c56c-c0b3-476a-828f-224ad7f8cb18}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void setScale(float k)</declaration>
@@ -777,7 +1074,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{d3ec52b4-ee5c-40e7-a959-7b86918e17e8}</uid>
+                               <uid>{173f3c4d-a912-4329-a746-82c7d7b107a6}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void setRotation(const QQuaternion &amp;r)</declaration>
@@ -785,7 +1082,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{18314886-b4aa-43e8-816f-b9c554ce2dec}</uid>
+                               <uid>{1aa2055a-5008-4e4d-8e75-a59010506fe4}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void setRotation(float angle, const QVector3D &amp;axis)</declaration>
@@ -793,7 +1090,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{42dc201e-c05c-441c-87a1-7eaf11ff9394}</uid>
+                               <uid>{46827cd7-e0ea-44d6-8841-8bed963f6945}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void setRotation(float angle, float ax, float ay, float az)</declaration>
@@ -801,7 +1098,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{e291cc0d-1544-42a3-a261-a98a74f5d93e}</uid>
+                               <uid>{a017a9b8-c1b5-4159-a9a4-0c264966a275}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <properties>4</properties>
@@ -810,7 +1107,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{5e1268ab-5c5a-4e2f-bec1-41939b819aa7}</uid>
+                               <uid>{e9d4aba7-fc40-414c-99f6-dc7eab51c16e}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <properties>4</properties>
@@ -819,7 +1116,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{ce086c3f-22d3-4453-9800-2c8cc181bd7f}</uid>
+                               <uid>{28e51823-7bf3-47b4-8c4b-2534666d9ed4}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <properties>4</properties>
@@ -828,7 +1125,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{76026374-8497-4c5e-8993-5d47ee9911ee}</uid>
+                               <uid>{749cab02-88c0-4a5c-925e-53038e0a840e}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>const QMatrix4x4&amp; toMatrix()</declaration>
@@ -836,7 +1133,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{cc53900e-ddaa-4084-a008-100f3db05614}</uid>
+                               <uid>{e9d91a64-ee32-432c-a57b-c1c3f6fc316a}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>bool m_dirty</declaration>
@@ -844,7 +1141,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{4bccdfca-5518-4ede-bf48-315eaa8b01cf}</uid>
+                               <uid>{2202fb3f-1268-4320-8cb0-ecf5bcc1a635}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>QVector3D m_translation</declaration>
@@ -852,7 +1149,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{4cfde382-a35a-446f-abd3-6bd87cd3b2fa}</uid>
+                               <uid>{a6ed6b89-187a-4d81-964e-84acbe266336}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>QVector3D m_scale</declaration>
@@ -860,7 +1157,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{e5a41a29-57db-4885-bb34-03e731e21392}</uid>
+                               <uid>{981bb571-d4a9-47b9-99c4-21d5b9093a3d}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>QQuaternion m_rotation</declaration>
@@ -868,7 +1165,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{4435965e-a0dc-4d86-aa38-8d3e7d80e46f}</uid>
+                               <uid>{7298120e-15e8-47c5-941f-00a10a2e6609}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>QMatrix4x4 m_world</declaration>
@@ -902,7 +1199,7 @@
                             <qlist>
                              <item>
                               <MClassMember>
-                               <uid>{531cad61-9661-4114-903b-ff5007e87e97}</uid>
+                               <uid>{42d3ea2b-f027-4cf3-9d44-d6213067e488}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <properties>32</properties>
@@ -911,7 +1208,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{b21ab94a-9667-476b-a0d1-f4e71a93c442}</uid>
+                               <uid>{224d7df8-c9a4-4270-bade-617ea151913c}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <properties>32</properties>
@@ -920,7 +1217,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{8bc251c6-d80f-4a91-b763-613f26ddb1a3}</uid>
+                               <uid>{30c65b60-61f2-4ccb-85ac-972b2d8ec5ae}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <properties>32</properties>
@@ -929,7 +1226,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{c257024d-f031-4a43-90fa-2d5f5abba480}</uid>
+                               <uid>{5f690219-25c6-4658-a453-13291accea5b}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <properties>36</properties>
@@ -938,7 +1235,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{26912853-e84f-47b5-bd3f-95b952ced260}</uid>
+                               <uid>{b7759cc0-763f-43e6-b72b-81472518b1a4}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <properties>36</properties>
@@ -947,7 +1244,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{c802e8bc-010b-41fe-801e-844b666c5de6}</uid>
+                               <uid>{e5648def-f24c-4cc4-b51d-95c1edd60a90}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void setPosition(const QVector3D&amp; position)</declaration>
@@ -955,7 +1252,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{b50eb26c-7b8b-47c5-8b8c-dac8bcb25c14}</uid>
+                               <uid>{01ed4383-fae7-483a-a0f1-edd862cded14}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void setColor(const QVector3D&amp; color)</declaration>
@@ -963,7 +1260,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{e3fed56a-6fa7-4054-9f1f-4de5cfc04977}</uid>
+                               <uid>{d584aa1b-f1ea-40a8-abba-1015e63694fa}</uid>
                                <visibility>1</visibility>
                                <type>1</type>
                                <properties>64</properties>
@@ -972,7 +1269,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{93ce7d37-31a4-4383-af61-d654b430ad69}</uid>
+                               <uid>{9cec2dc7-f90d-45a6-8bb5-c178a673164c}</uid>
                                <visibility>1</visibility>
                                <type>1</type>
                                <properties>64</properties>
@@ -981,7 +1278,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{8950870e-1a6c-4c14-b6af-b9c6c8abd772}</uid>
+                               <uid>{0808855f-245c-44ad-9f27-8963cf27141a}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <properties>96</properties>
@@ -990,7 +1287,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{5c3a1216-6dfe-4e90-98b2-ad26e9ff2d85}</uid>
+                               <uid>{b230c900-2bd7-4092-8b84-eb110f9ee3c7}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <properties>96</properties>
@@ -999,7 +1296,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{744fe98f-1f9c-4e23-937d-a3c6dcf65e90}</uid>
+                               <uid>{f9dfacc1-ca16-4246-86cb-9084dace06f5}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <properties>96</properties>
@@ -1008,7 +1305,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{98386c76-0468-473a-8199-ac9fa20781e7}</uid>
+                               <uid>{de39c114-82a6-4fef-a8e5-1525d99952b2}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>QVector3D m_position</declaration>
@@ -1016,7 +1313,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{26e6bc86-ed69-4566-837d-228c42ded423}</uid>
+                               <uid>{a7011720-2ff2-4b4c-bdf6-336a6472d00f}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>QVector3D m_color</declaration>
@@ -1044,13 +1341,137 @@
                               </MElement>
                              </base-MElement>
                              <name>Window</name>
+                             <relations>
+                              <handles>
+                               <handles>
+                                <qlist>
+                                 <item>
+                                  <handle>
+                                   <uid>{c6ef89aa-cec0-4527-9805-be0a3e547ac7}</uid>
+                                   <target>
+                                    <instance type="MAssociation">
+                                     <MAssociation>
+                                      <base-MRelation>
+                                       <MRelation>
+                                        <base-MElement>
+                                         <MElement>
+                                          <uid>{c6ef89aa-cec0-4527-9805-be0a3e547ac7}</uid>
+                                         </MElement>
+                                        </base-MElement>
+                                        <a>{df713bc6-e718-4fdf-b77b-ffebaf85d6b8}</a>
+                                        <b>{8affb8b4-bac0-498d-ae58-889d6b082667}</b>
+                                       </MRelation>
+                                      </base-MRelation>
+                                      <a>
+                                       <MAssociationEnd>
+                                        <cardinality>*</cardinality>
+                                        <navigable>true</navigable>
+                                        <kind>1</kind>
+                                       </MAssociationEnd>
+                                      </a>
+                                     </MAssociation>
+                                    </instance>
+                                   </target>
+                                  </handle>
+                                 </item>
+                                 <item>
+                                  <handle>
+                                   <uid>{d6904a41-1270-441f-b83d-ed187d23df80}</uid>
+                                   <target>
+                                    <instance type="MAssociation">
+                                     <MAssociation>
+                                      <base-MRelation>
+                                       <MRelation>
+                                        <base-MElement>
+                                         <MElement>
+                                          <uid>{d6904a41-1270-441f-b83d-ed187d23df80}</uid>
+                                         </MElement>
+                                        </base-MElement>
+                                        <a>{df713bc6-e718-4fdf-b77b-ffebaf85d6b8}</a>
+                                        <b>{e5c76ad7-0453-4fa8-8269-112e2cd26bd6}</b>
+                                       </MRelation>
+                                      </base-MRelation>
+                                      <a>
+                                       <MAssociationEnd>
+                                        <cardinality>*</cardinality>
+                                        <navigable>true</navigable>
+                                        <kind>1</kind>
+                                       </MAssociationEnd>
+                                      </a>
+                                     </MAssociation>
+                                    </instance>
+                                   </target>
+                                  </handle>
+                                 </item>
+                                 <item>
+                                  <handle>
+                                   <uid>{3bcfd339-06fa-4e72-b319-731d4bc129e9}</uid>
+                                   <target>
+                                    <instance type="MAssociation">
+                                     <MAssociation>
+                                      <base-MRelation>
+                                       <MRelation>
+                                        <base-MElement>
+                                         <MElement>
+                                          <uid>{3bcfd339-06fa-4e72-b319-731d4bc129e9}</uid>
+                                         </MElement>
+                                        </base-MElement>
+                                        <a>{df713bc6-e718-4fdf-b77b-ffebaf85d6b8}</a>
+                                        <b>{cf1b6581-b439-461f-b933-60c111651836}</b>
+                                       </MRelation>
+                                      </base-MRelation>
+                                      <a>
+                                       <MAssociationEnd>
+                                        <cardinality>*</cardinality>
+                                        <navigable>true</navigable>
+                                        <kind>1</kind>
+                                       </MAssociationEnd>
+                                      </a>
+                                     </MAssociation>
+                                    </instance>
+                                   </target>
+                                  </handle>
+                                 </item>
+                                 <item>
+                                  <handle>
+                                   <uid>{6f12f358-662f-49c8-b6c8-18d912a154a1}</uid>
+                                   <target>
+                                    <instance type="MAssociation">
+                                     <MAssociation>
+                                      <base-MRelation>
+                                       <MRelation>
+                                        <base-MElement>
+                                         <MElement>
+                                          <uid>{6f12f358-662f-49c8-b6c8-18d912a154a1}</uid>
+                                         </MElement>
+                                        </base-MElement>
+                                        <a>{df713bc6-e718-4fdf-b77b-ffebaf85d6b8}</a>
+                                        <b>{237274ac-fa81-417b-9f53-0c1b23290783}</b>
+                                       </MRelation>
+                                      </base-MRelation>
+                                      <a>
+                                       <MAssociationEnd>
+                                        <cardinality>*</cardinality>
+                                        <navigable>true</navigable>
+                                        <kind>1</kind>
+                                       </MAssociationEnd>
+                                      </a>
+                                     </MAssociation>
+                                    </instance>
+                                   </target>
+                                  </handle>
+                                 </item>
+                                </qlist>
+                               </handles>
+                              </handles>
+                             </relations>
                             </MObject>
                            </base-MObject>
                            <members>
                             <qlist>
                              <item>
                               <MClassMember>
-                               <uid>{a425342f-3b0a-41d8-a535-54e7c85d0c06}</uid>
+                               <uid>{9bad870b-a009-46c0-8e48-9b44f2c985fb}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>Window()</declaration>
@@ -1058,7 +1479,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{afb24ffa-1cdc-4539-8751-efa0c51909ad}</uid>
+                               <uid>{c28e336e-5267-47ad-ba1f-b5dc8fefc971}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void initializeGL()</declaration>
@@ -1066,7 +1487,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{a43a57de-6dd6-4c62-89f2-8e0e89237098}</uid>
+                               <uid>{a795d322-baca-45bc-8f88-7f3fd634d003}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void resizeGL(int width, int height)</declaration>
@@ -1074,7 +1495,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{fe1facd8-0cd5-410d-9d3b-37124a39105e}</uid>
+                               <uid>{abed0c9d-3139-4df9-abac-8bc4a775a32f}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void paintGL()</declaration>
@@ -1082,7 +1503,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{bbfdd231-710d-4f28-8ee4-516abc817b2f}</uid>
+                               <uid>{c0dc924b-62f8-458c-b8e4-e1fe346c233a}</uid>
                                <visibility>6</visibility>
                                <type>2</type>
                                <declaration>void teardownGL()</declaration>
@@ -1090,7 +1511,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{52633474-38ad-4fbe-a053-c9e20812a968}</uid>
+                               <uid>{1803db80-ded6-4dde-96e7-76ffb4233e0c}</uid>
                                <visibility>6</visibility>
                                <type>2</type>
                                <declaration>void update()</declaration>
@@ -1098,7 +1519,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{c7ddf40a-56ea-4a97-9f6d-5d278f3eff2c}</uid>
+                               <uid>{bcc90c87-520e-4b87-80a1-14eeb2be05e5}</uid>
                                <visibility>2</visibility>
                                <type>2</type>
                                <declaration>void keyPressEvent(QKeyEvent *event)</declaration>
@@ -1106,7 +1527,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{d573a0b0-c666-4ae3-b59d-fd607ae618b5}</uid>
+                               <uid>{4e95f06f-6635-4a5e-95f7-43b140ff9a55}</uid>
                                <visibility>2</visibility>
                                <type>2</type>
                                <declaration>void keyReleaseEvent(QKeyEvent *event)</declaration>
@@ -1114,7 +1535,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{3cb38055-ba43-461c-a504-aa3e2d32646f}</uid>
+                               <uid>{40fc9de8-f5da-4e92-82c7-ee6c9d94088b}</uid>
                                <visibility>2</visibility>
                                <type>2</type>
                                <declaration>void mousePressEvent(QMouseEvent *event)</declaration>
@@ -1122,7 +1543,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{4c07a5c3-a67b-4791-8e77-d4cfc58a0f4f}</uid>
+                               <uid>{ffb48ab5-22aa-46f9-aee7-56aade32af7d}</uid>
                                <visibility>2</visibility>
                                <type>2</type>
                                <declaration>void mouseReleaseEvent(QMouseEvent *event)</declaration>
@@ -1130,7 +1551,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{c49fd7c9-7d8a-41a3-9c27-dbf60ea659e5}</uid>
+                               <uid>{2786a9d9-2968-45a3-b421-fc929e038637}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>QOpenGLBuffer m_vertex</declaration>
@@ -1138,7 +1559,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{0cf5aeae-d8b7-4676-98aa-b389cd29837b}</uid>
+                               <uid>{3e219408-2b1c-4768-b22a-d3c9f55c8c51}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>QOpenGLVertexArrayObject m_object</declaration>
@@ -1146,7 +1567,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{6d4abe63-7d80-41ae-9cc1-578ee5e3240e}</uid>
+                               <uid>{5c10728f-71f4-489f-b0ec-2a2e98338cb7}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>QOpenGLShaderProgram *m_program</declaration>
@@ -1154,7 +1575,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{04d7e4eb-5dda-477a-bac9-8f8ca98d5584}</uid>
+                               <uid>{efc58af0-93b6-44c3-a3f1-3af75b4e8dca}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>int u_modelToWorld</declaration>
@@ -1162,7 +1583,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{8881c1b4-ea82-4ec9-b931-0567bf389147}</uid>
+                               <uid>{0dd5982f-91cc-424f-aa64-c5b9a8614867}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>int u_worldToCamera</declaration>
@@ -1170,7 +1591,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{8ca79ff5-6829-4b8a-a81c-12296b5c5338}</uid>
+                               <uid>{9d979f44-852f-4ba3-8544-b372719e6c09}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>int u_cameraToView</declaration>
@@ -1178,7 +1599,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{3c59349d-40ba-4f98-abac-ce916e874c0f}</uid>
+                               <uid>{03be93e2-1b08-4889-bccb-5a213dcd83d4}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>QMatrix4x4 m_projection</declaration>
@@ -1186,7 +1607,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{f365e463-464a-425f-9fd0-1513a8d34b54}</uid>
+                               <uid>{ec70413d-0738-4e8d-8333-1331e398cfcd}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>Camera3D m_camera</declaration>
@@ -1194,7 +1615,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{20259685-4417-4073-b0b5-8e1f576311d0}</uid>
+                               <uid>{ae12c32e-f37d-49e9-8c16-853a74e64307}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>Transform3D m_transform</declaration>
@@ -1202,7 +1623,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{f8fea9a9-d02c-4cf0-aff1-2e65ffa2d3b2}</uid>
+                               <uid>{8904faab-7ed4-495a-b622-d7f64635fed4}</uid>
                                <visibility>3</visibility>
                                <type>2</type>
                                <declaration>void printVersionInformation()</declaration>
@@ -1211,6 +1632,110 @@
                             </qlist>
                            </members>
                           </MClass>
+                         </instance>
+                        </target>
+                       </handle>
+                      </item>
+                      <item>
+                       <handle>
+                        <uid>{2079f64c-1d51-4827-b3bb-4304eb6bba2c}</uid>
+                        <target>
+                         <instance type="MPackage">
+                          <MPackage>
+                           <base-MObject>
+                            <MObject>
+                             <base-MElement>
+                              <MElement>
+                               <uid>{2079f64c-1d51-4827-b3bb-4304eb6bba2c}</uid>
+                               <flags>1</flags>
+                              </MElement>
+                             </base-MElement>
+                             <name>Shaders</name>
+                             <children>
+                              <handles>
+                               <handles>
+                                <qlist>
+                                 <item>
+                                  <handle>
+                                   <uid>{ff20d182-f933-4c8c-bae7-2ee1e6f7af40}</uid>
+                                   <target>
+                                    <instance type="MComponent">
+                                     <MComponent>
+                                      <base-MObject>
+                                       <MObject>
+                                        <base-MElement>
+                                         <MElement>
+                                          <uid>{ff20d182-f933-4c8c-bae7-2ee1e6f7af40}</uid>
+                                          <flags>1</flags>
+                                         </MElement>
+                                        </base-MElement>
+                                        <name>Simple</name>
+                                        <relations>
+                                         <handles>
+                                          <handles>
+                                           <qlist>
+                                            <item>
+                                             <handle>
+                                              <uid>{41881643-e68a-4354-8400-1f9220188835}</uid>
+                                              <target>
+                                               <instance type="MDependency">
+                                                <MDependency>
+                                                 <base-MRelation>
+                                                  <MRelation>
+                                                   <base-MElement>
+                                                    <MElement>
+                                                     <uid>{41881643-e68a-4354-8400-1f9220188835}</uid>
+                                                    </MElement>
+                                                   </base-MElement>
+                                                   <a>{ff20d182-f933-4c8c-bae7-2ee1e6f7af40}</a>
+                                                   <b>{df713bc6-e718-4fdf-b77b-ffebaf85d6b8}</b>
+                                                  </MRelation>
+                                                 </base-MRelation>
+                                                </MDependency>
+                                               </instance>
+                                              </target>
+                                             </handle>
+                                            </item>
+                                            <item>
+                                             <handle>
+                                              <uid>{5e321532-2bc0-409f-9606-0bfb61e80d8c}</uid>
+                                              <target>
+                                               <instance type="MDependency">
+                                                <MDependency>
+                                                 <base-MRelation>
+                                                  <MRelation>
+                                                   <base-MElement>
+                                                    <MElement>
+                                                     <uid>{5e321532-2bc0-409f-9606-0bfb61e80d8c}</uid>
+                                                    </MElement>
+                                                   </base-MElement>
+                                                   <a>{ff20d182-f933-4c8c-bae7-2ee1e6f7af40}</a>
+                                                   <b>{df713bc6-e718-4fdf-b77b-ffebaf85d6b8}</b>
+                                                  </MRelation>
+                                                 </base-MRelation>
+                                                </MDependency>
+                                               </instance>
+                                              </target>
+                                             </handle>
+                                            </item>
+                                           </qlist>
+                                          </handles>
+                                         </handles>
+                                        </relations>
+                                       </MObject>
+                                      </base-MObject>
+                                     </MComponent>
+                                    </instance>
+                                   </target>
+                                  </handle>
+                                 </item>
+                                </qlist>
+                               </handles>
+                              </handles>
+                             </children>
+                            </MObject>
+                           </base-MObject>
+                          </MPackage>
                          </instance>
                         </target>
                        </handle>

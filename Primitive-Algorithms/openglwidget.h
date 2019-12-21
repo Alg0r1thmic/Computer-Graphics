@@ -12,6 +12,8 @@
 #include "Circle.h"
 #include "Ellipse.h"
 #include "Polygon.h"
+#include "beziercurve.h"
+#include <list>
 #define RGB_MIN 1
 #define RGB_MAX 255
 class OpenglWidget: public QOpenGLWidget
@@ -51,6 +53,8 @@ private:
     int xAtPress=0,yAtPress=0,xAtRelease=0,yAtRelease=0;
     QPoint initPos;
     QPoint finalPos;
+    vector<wcPt3D> vec;
+    int x,y;
 };
 
 #endif // OPENGLWIDGET_H

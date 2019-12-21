@@ -79,6 +79,16 @@ void OpenglWidget::paintGL()
         p.scalePolygon(points,4,fixed,sx,sy);
         glFlush();
     }break;
+    case 5:{
+        GLint nCtrlPts = 4, nBezCurvePts =1000;
+        BezierCurve b;
+        wcPt3D p={float(x),float(y), 0.0};
+        vec.push_back(p);
+        setPixel(x,y);
+        //glFlush();
+        qDebug() << p.x << p.y << p.z ;
+        b.bezier(vec, vec.size(), nBezCurvePts);
+    }break;
     default:{}break;
     }
     glFlush();
@@ -99,8 +109,11 @@ void OpenglWidget::mouseReleaseEvent(QMouseEvent *event)
         qDebug() <<"relseaPress"<< xAtRelease << "-" << yAtRelease ;
 
     }
+    x=event->x();
+    y=500-event->y();
     ++MouseAux;
     update();
+
 }
 
 void OpenglWidget::resetValues()

@@ -26,6 +26,7 @@ HEADERS += \
     Line.h \
     Polygon.h \
     Shape.h \
+    beziercurve.h \
     mainwindow.h \
     openglwidget.h
 
